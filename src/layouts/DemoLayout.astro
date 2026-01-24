@@ -26,6 +26,11 @@ const { title, description } = Astro.props;
     <meta property="twitter:description" content={description} />
   </head>
   <body class="font-sans antialiased">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <!-- Back to MMGroup button - floating in top left -->
     <a 
       href="/"
