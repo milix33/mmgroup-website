@@ -1,14 +1,37 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Navbar from '../../components/Navbar.astro';
-import Footer from '../../components/Footer.astro';
+import DemoLayout from '../../layouts/DemoLayout.astro';
 ---
 
-<BaseLayout 
+<DemoLayout 
   title="Auto Servis Premium — Profesionalna usluga i održavanje vozila" 
   description="Vaš auto zaslužuje najbolju njegu. Servis, dijagnostika, gume, klima i redovno održavanje. Zakažite termin danas."
 >
-  <Navbar slot="navbar" />
+  <!-- Header for Auto Servis -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-40 backdrop-blur-sm bg-white/95">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <div>
+            <div class="font-bold text-gray-900 text-xl">Auto Servis Premium</div>
+            <div class="text-xs text-gray-500">Profesionalna njega vozila</div>
+          </div>
+        </div>
+        <nav class="hidden md:flex gap-6">
+          <a href="#services" class="text-gray-600 hover:text-emerald-600 transition-colors">Usluge</a>
+          <a href="#prices" class="text-gray-600 hover:text-emerald-600 transition-colors">Cijene</a>
+          <a href="#contact" class="text-gray-600 hover:text-emerald-600 transition-colors">Kontakt</a>
+        </nav>
+        <a href="#booking" class="px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors text-sm font-semibold">
+          Zakažite termin
+        </a>
+      </div>
+    </div>
+  </header>
   
   <section class="py-20 bg-gradient-to-br from-emerald-500 to-teal-600 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -377,5 +400,50 @@ import Footer from '../../components/Footer.astro';
     </div>
   </section>
   
-  <Footer slot="footer" />
-</BaseLayout>
+  <!-- Footer for Auto Servis -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+            </div>
+            <div>
+              <div class="font-bold text-lg">Auto Servis Premium</div>
+              <div class="text-sm text-gray-400">Profesionalna njega vozila</div>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm">
+            Više od 15 godina iskustva u održavanju i servisu vozila. Vaš auto zaslužuje najbolju njegu.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="font-semibold mb-4">Kontakt</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>Telefon: +387 61 123 456</li>
+            <li>Email: info@autoservis.ba</li>
+            <li>Adresa: Industrijska zona bb</li>
+            <li>71000 Sarajevo, BiH</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-semibold mb-4">Radno vrijeme</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>Ponedjeljak - Petak: 08:00 - 17:00</li>
+            <li>Subota: 08:00 - 13:00</li>
+            <li>Nedjelja: Zatvoreno</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+        <p>© 2026 Auto Servis Premium. Sva prava zadržana.</p>
+      </div>
+    </div>
+  </footer>
+</DemoLayout>

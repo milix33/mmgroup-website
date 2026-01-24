@@ -1,14 +1,38 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Navbar from '../../components/Navbar.astro';
-import Footer from '../../components/Footer.astro';
+import DemoLayout from '../../layouts/DemoLayout.astro';
 ---
 
-<BaseLayout 
+<DemoLayout 
   title="TransSpeed — Pouzdani transport i logistika" 
   description="Brz i siguran transport robe širom Europe. Moderna flota, praćenje u realnom vremenu, konkurentne cijene."
 >
-  <Navbar slot="navbar" />
+  <!-- Header for TransSpeed -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-40 backdrop-blur-sm bg-white/95">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+            </svg>
+          </div>
+          <div>
+            <div class="font-bold text-gray-900 text-xl">TransSpeed</div>
+            <div class="text-xs text-gray-500">Transport & Logistika</div>
+          </div>
+        </div>
+        <nav class="hidden md:flex gap-6">
+          <a href="#services" class="text-gray-600 hover:text-orange-600 transition-colors">Usluge</a>
+          <a href="#fleet" class="text-gray-600 hover:text-orange-600 transition-colors">Flota</a>
+          <a href="#contact" class="text-gray-600 hover:text-orange-600 transition-colors">Kontakt</a>
+        </nav>
+        <a href="#quote" class="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors text-sm font-semibold">
+          Zatražite ponudu
+        </a>
+      </div>
+    </div>
+  </header>
   
   <section class="py-20 bg-gradient-to-br from-orange-500 to-red-600 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -479,5 +503,62 @@ import Footer from '../../components/Footer.astro';
     </div>
   </section>
   
-  <Footer slot="footer" />
-</BaseLayout>
+  <!-- Footer for TransSpeed -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+              </svg>
+            </div>
+            <div>
+              <div class="font-bold text-lg">TransSpeed</div>
+              <div class="text-sm text-gray-400">Transport & Logistika</div>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm">
+            Pouzdani partner za transport i logistiku širom Europe.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="font-semibold mb-4">Usluge</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>Domaći transport</li>
+            <li>Međunarodni transport</li>
+            <li>Express dostava</li>
+            <li>Skladištenje</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-semibold mb-4">Kontakt</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>Telefon: +387 61 999 888</li>
+            <li>Email: info@transspeed.ba</li>
+            <li>Logistički centar:</li>
+            <li>Industrijska 45, Sarajevo</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-semibold mb-4">Radno vrijeme</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>Pon-Pet: 00-24h</li>
+            <li>Subota: 00-24h</li>
+            <li>Nedjelja: 00-24h</li>
+            <li class="text-orange-400 font-semibold">Dostupni 24/7</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+        <p>© 2026 TransSpeed. Sva prava zadržana. | Licenca za prijevoz: TP-12345</p>
+      </div>
+    </div>
+  </footer>
+</DemoLayout>

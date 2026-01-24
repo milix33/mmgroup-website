@@ -1,0 +1,160 @@
+================================================================================
+                  📞 BRZO PODEŠAVANJE KONTAKTA (5 minuta)
+================================================================================
+
+✅ Kontakt funkcionalnost je implementirana!
+
+================================================================================
+                         ŠTA TREBA DA URADIŠ
+================================================================================
+
+KORAK 1: AŽURIRAJ BROJ TELEFONA I EMAIL
+   
+   Otvori fajl: src/config.ts
+   
+   Promijeni:
+   
+   phone: "38761234567",        → Tvoj broj (samo brojevi, sa kodom)
+   email: "info@mmgroup.ba",    → Tvoj email (ili ostavi)
+   formspreeId: "YOUR_FORMSPREE_ID",  → Vidi Korak 2
+
+
+KORAK 2: SETUP FORMSPREE (da forma radi)
+   
+   a) Idi na: https://formspree.io
+   b) Registruj se (besplatno, 50 email-ova mjesečno)
+   c) Klikni "+ New Form"
+   d) Unesi ime i email gdje želiš da primaš poruke
+   e) Kopiraj Form ID (npr. "xyzabc123")
+   f) Otvori src/config.ts i ažuriraj:
+      
+      formspreeId: "xyzabc123",  // 👈 Tvoj ID ovdje
+
+
+KORAK 3: TESTIRAJ
+   
+   a) Sačuvaj fajlove
+   b) Refresh sajt: http://localhost:4321/contact
+   c) Klikni WhatsApp → treba da otvori WhatsApp sa tvojim brojem
+   d) Klikni Viber → treba da otvori Viber
+   e) Popuni formu i pošalji → treba da stigne email!
+
+
+KORAK 4: COMMIT I PUSH (opciono)
+   
+   git add .
+   git commit -m "Update contact info"
+   git push
+
+================================================================================
+                         KAKO RADI
+================================================================================
+
+WHATSAPP:
+   Format: https://wa.me/38761234567
+   Automatski se generiše iz phone broja u config.ts
+
+
+VIBER:
+   Format: viber://chat?number=38761234567
+   Automatski se generiše iz phone broja u config.ts
+
+
+EMAIL:
+   Format: mailto:info@mmgroup.ba
+   Koristi email iz config.ts
+
+
+FORMA:
+   Šalje na Formspree koji prosljeđuje na tvoj email
+   Besplatno: 50 submita/mjesec
+   Upgrade: $10/mjesec za 1000 submita
+
+================================================================================
+                         PRIMJERI BROJEVA
+================================================================================
+
+BiH:        38761234567
+Srbija:     381641234567
+Hrvatska:   385911234567
+Slovenija:  38640123456
+CG:         38267123456
+
+(Bez +, razmaka ili crtica — samo brojevi!)
+
+================================================================================
+                         TROUBLESHOOTING
+================================================================================
+
+PROBLEM: WhatsApp ne otvara?
+   → Provjeri format broja u config.ts
+   → Na desktopu treba WhatsApp Desktop app
+
+PROBLEM: Forma ne šalje?
+   → Provjeri formspreeId u config.ts
+   → Provjeri spam folder
+   → Vidi da li je submission u Formspree dashboard-u
+
+PROBLEM: Email ne stiže?
+   → Provjeri da si potvrdio email u Formspree
+   → Provjeri spam
+
+================================================================================
+                         DODATNE OPCIJE
+================================================================================
+
+AUTO-REPLY EMAIL:
+   Formspree → Settings → Auto-Reply
+   Postavi custom poruku koja se šalje korisniku
+
+CUSTOM EMAIL SUBJECT:
+   Formspree → Settings → Email Subject
+   Npr: "Novi upit sa MMGroup.ba"
+
+THANK YOU PAGE:
+   Dodaj u formu:
+   <input type="hidden" name="_next" value="https://domen.com/hvala" />
+
+================================================================================
+                         DETALJNO UPUTSTVO
+================================================================================
+
+Pročitaj: CONTACT_SETUP.md
+   - Detaljne instrukcije
+   - Screenshots (conceptualno)
+   - Sve opcije
+   - Troubleshooting
+
+================================================================================
+                         QUICK CHECKLIST
+================================================================================
+
+[ ] Otvorio src/config.ts
+[ ] Ažurirao phone broj
+[ ] Ažurirao email (ako treba)
+[ ] Registrovao se na Formspree.io
+[ ] Kreirao formu
+[ ] Kopirao Form ID u config.ts
+[ ] Testirao WhatsApp
+[ ] Testirao Viber
+[ ] Testirao formu
+[ ] Primio test email
+[ ] Commitovao i push-ovao
+
+================================================================================
+                         STATUS
+================================================================================
+
+✅ Kontakt linkovi: Implementirani (WhatsApp, Viber, Email)
+✅ Forma: Spremna (treba samo Formspree ID)
+✅ Config: Centralizovan u src/config.ts
+✅ Dokumentacija: CONTACT_SETUP.md
+✅ Git: Commitovano i push-ovano
+
+================================================================================
+
+🎉 GOTOVO!
+
+Samo ažuriraj src/config.ts i sve radi! 🚀
+
+================================================================================
