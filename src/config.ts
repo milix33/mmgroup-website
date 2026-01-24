@@ -4,14 +4,14 @@
 export const CONTACT = {
   // Telefon bez +, razmaka ili crtica (samo brojevi)
   // Primer: "38761234567" za bosanski broj
-  phone: "38761234567", // AŽURIRAJ OVDJE!
+  phone: "38765156607", // ✅ Ažurirano!
   
   // Email adresa
-  email: "info@mmgroup.ba",
+  email: "milos76@gmail.com",
   
   // Formspree Form ID (registruj se na https://formspree.io)
   // Nakon registracije kreiraj form i dobićeš ID poput "xyzabc123"
-  formspreeId: "YOUR_FORMSPREE_ID", // AŽURIRAJ OVDJE!
+  formspreeId: "YOUR_FORMSPREE_ID", // ⚠️ TREBA JOŠ OVDJE!
   
   // WhatsApp link se automatski generiše iz phone broja
   // Format: https://wa.me/38761234567
