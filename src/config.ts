@@ -11,7 +11,7 @@ export const CONTACT = {
   
   // Formspree Form ID (registruj se na https://formspree.io)
   // Nakon registracije kreiraj form i dobićeš ID poput "xyzabc123"
-  formspreeId: "YOUR_FORMSPREE_ID", // ⚠️ TREBA JOŠ OVDJE!
+  formspreeId: "xykelndn", // ✅ Ažurirano!
   
   // WhatsApp link se automatski generiše iz phone broja
   // Format: https://wa.me/38761234567
