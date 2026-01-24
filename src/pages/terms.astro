@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout 
+  title="Terms of Service — MMGroup" 
+  description="Terms of service for MMGroup website and services."
+>
+  <Navbar slot="navbar" />
+  
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold text-gray-900 mb-8">Terms of Service</h1>
+      
+      <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
+        <p class="text-sm text-gray-500">Posljednji update: Januar 2026</p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Prihvatanje uslova</h2>
+        <p>
+          Korišćenjem naših usluga prihvatate ove uslove korištenja. Ako se ne slažete sa uslovima, nemojte koristiti naše usluge.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Usluge</h2>
+        <p>
+          MMGroup pruža usluge web dizajna, razvoja web stranica, web aplikacija, hostinga i održavanja. Sve usluge se pružaju na osnovu individualno dogovorenih uslova i cijena.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Plaćanje</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Za START i PRO pakete: 50% avans + 50% po završetku</li>
+          <li>Za CUSTOM projekte: plaćanje po fazama prema dogovoru</li>
+          <li>Cijena je fiksna nakon potpisivanja ugovora, osim u slučaju izmjena scope-a</li>
+          <li>Prihvatamo bankovni transfer i PayPal</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Isporuka</h2>
+        <p>
+          Rokovi isporuke su procijenjeni i zavise od dostupnosti sadržaja i feedbacka od klijenta. Kašnjenje u isporuci sadržaja može produžiti rok završetka projekta.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Revizije i izmjene</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Uključene su 2-3 runde revizija (zavisno od paketa)</li>
+          <li>Male ispravke i bugfix su uključeni u cijenu</li>
+          <li>Veće izmjene i novi feature se naplaćuju dodatno</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Intelektualna svojina</h2>
+        <p>
+          Nakon potpune uplate, klijent dobija puna prava korištenja nad web stranicom/aplikacijom. MMGroup zadržava pravo korištenja projekta u portfoliju i promotivne svrhe.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Hosting i održavanje</h2>
+        <p>
+          Hosting i održavanje se naplaćuju mjesečno i mogu se otkazati uz otkazni rok od 30 dana. Uključuju backup, update i tehničku podršku.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Garancija i odgovornost</h2>
+        <p>
+          MMGroup garantuje kvalitet rada i ispravnost funkcionalnosti. Ne snosimo odgovornost za gubitak podataka, downtime ili indirektnu štetu.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Raskid ugovora</h2>
+        <p>
+          Klijent može raskinuti ugovor u bilo kojem trenutku, ali je dužan platiti za već urađen posao. MMGroup može raskinuti ugovor u slučaju kašnjenja plaćanja ili nepoštovanja uslova.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">10. Kontakt</h2>
+        <p>
+          Za pitanja kontaktirajte nas na: <a href="mailto:info@mmgroup.ba" class="text-indigo-600 hover:text-indigo-700">info@mmgroup.ba</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <Footer slot="footer" />
+</BaseLayout>

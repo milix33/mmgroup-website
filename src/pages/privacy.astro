@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout 
+  title="Privacy Policy — MMGroup" 
+  description="Privacy policy for MMGroup website and services."
+>
+  <Navbar slot="navbar" />
+  
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
+      
+      <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
+        <p class="text-sm text-gray-500">Posljednji update: Januar 2026</p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Uvod</h2>
+        <p>
+          MMGroup ("mi", "nas", "naša") poštuje vašu privatnost i posvećeni smo zaštiti vaših ličnih podataka. Ova politika privatnosti objašnjava kako prikupljamo, koristimo i štitimo vaše podatke.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Podaci koje prikupljamo</h2>
+        <p>Možemo prikupljati sljedeće podatke:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Ime i prezime</li>
+          <li>Ime firme i djelatnost</li>
+          <li>Email adresa ili broj telefona</li>
+          <li>Poruke i upiti koje nam pošaljete</li>
+          <li>Tehnički podaci (IP adresa, browser, operativni sistem)</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Kako koristimo vaše podatke</h2>
+        <p>Vaše podatke koristimo za:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Odgovor na vaše upite i pružanje usluga</li>
+          <li>Komunikaciju u vezi sa projektima</li>
+          <li>Poboljšanje naših usluga</li>
+          <li>Ispunjavanje zakonskih obaveza</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Dijeljenje podataka</h2>
+        <p>
+          Ne prodajemo, ne izdajemo niti dijelimo vaše lične podatke sa trećim stranama, osim u slučajevima kada je to zakonski obavezno ili potrebno za pružanje naših usluga (npr. hosting provajderi).
+        </p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Sigurnost podataka</h2>
+        <p>
+          Koristimo odgovarajuće tehničke i organizacijske mjere za zaštitu vaših podataka od neovlaštenog pristupa, gubitka ili злоупотребе.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Vaša prava</h2>
+        <p>Imate pravo da:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Pristupite svojim ličnim podacima</li>
+          <li>Zatražite ispravku netačnih podataka</li>
+          <li>Zatražite brisanje vaših podataka</li>
+          <li>Povučete pristanak za obradu podataka</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Kolačići (Cookies)</h2>
+        <p>
+          Koristimo kolačiće za poboljšanje korisničkog iskustva i analitiku. Možete isključiti kolačiće u postavkama vašeg browsera.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Kontakt</h2>
+        <p>
+          Za pitanja u vezi sa privatnošću kontaktirajte nas na: <a href="mailto:info@mmgroup.ba" class="text-indigo-600 hover:text-indigo-700">info@mmgroup.ba</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <Footer slot="footer" />
+</BaseLayout>

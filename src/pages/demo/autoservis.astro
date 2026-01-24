@@ -1,0 +1,381 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout 
+  title="Auto Servis Premium — Profesionalna usluga i održavanje vozila" 
+  description="Vaš auto zaslužuje najbolju njegu. Servis, dijagnostika, gume, klima i redovno održavanje. Zakažite termin danas."
+>
+  <Navbar slot="navbar" />
+  
+  <section class="py-20 bg-gradient-to-br from-emerald-500 to-teal-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
+            Profesionalna usluga i održavanje vozila
+          </h1>
+          <p class="text-xl text-emerald-50 mb-8">
+            Više od 15 godina iskustva. Moderne opreme. Certificirani mehaničari. Vaš auto zaslužuje najbolju njegu.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a 
+              href="#booking" 
+              class="inline-flex items-center justify-center px-8 py-4 bg-white text-emerald-600 rounded-lg hover:bg-emerald-50 transition-colors font-semibold text-lg"
+            >
+              Zakažite termin
+            </a>
+            <a 
+              href="#services" 
+              class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white hover:text-emerald-600 transition-colors font-semibold text-lg"
+            >
+              Naše usluge
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-emerald-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-emerald-50">Besplatna dijagnostika</span>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-emerald-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-emerald-50">Zamjensko vozilo (na upit)</span>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-emerald-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-emerald-50">Garancija na sve usluge</span>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-emerald-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-emerald-50">Online booking 24/7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Naše usluge</h2>
+        <p class="text-xl text-gray-600">Kompletna briga o vašem vozilu na jednom mjestu</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Redovno održavanje</h3>
+          <p class="text-gray-600 mb-4">Zamjena ulja, filtera, kočnica, amortizera. Pregled prema preporuci proizvođača.</p>
+          <p class="text-emerald-600 font-semibold">od 80 €</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Računarska dijagnostika</h3>
+          <p class="text-gray-600 mb-4">Moderna oprema za sve marke vozila. Brisanje grešaka, resetovanje servisa.</p>
+          <p class="text-emerald-600 font-semibold">od 25 €</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Klima servis</h3>
+          <p class="text-gray-600 mb-4">Punjenje, servis i popravka klima uređaja. Provjera ispravnosti sistema.</p>
+          <p class="text-emerald-600 font-semibold">od 50 €</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Gume i geometrija</h3>
+          <p class="text-gray-600 mb-4">Montaža, balansiranje, centriranje. Skladištenje guma zimi i ljeti.</p>
+          <p class="text-emerald-600 font-semibold">od 15 €</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Mehanički radovi</h3>
+          <p class="text-gray-600 mb-4">Popravka motora, mjenjača, ovjesa, izduvnog sistema. Sve vrste radova.</p>
+          <p class="text-emerald-600 font-semibold">Cijena na upit</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Tehnički pregled</h3>
+          <p class="text-gray-600 mb-4">Priprema za tehnički pregled. Provjera svih sistema i ispravnost dokumentacije.</p>
+          <p class="text-emerald-600 font-semibold">od 40 €</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Paketi održavanja</h2>
+        <p class="text-xl text-gray-600">Redovno održavanje po fiksnoj cijeni</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">MALI SERVIS</h3>
+          <p class="text-3xl font-bold text-gray-900 mb-4">od 120 €</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Zamjena ulja i filtera</span>
+            </li>
+            <li class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Provjera kočnica i ovjesa</span>
+            </li>
+            <li class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Reset servisa</span>
+            </li>
+          </ul>
+          <a href="#booking" class="block w-full text-center bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors font-semibold">
+            Zakažite
+          </a>
+        </div>
+        
+        <div class="bg-emerald-600 text-white rounded-2xl p-6 transform md:scale-105 shadow-lg">
+          <div class="text-xs font-semibold bg-white text-emerald-600 px-3 py-1 rounded-full inline-block mb-2">
+            Preporučujemo
+          </div>
+          <h3 class="text-xl font-semibold mb-2">VELIKI SERVIS</h3>
+          <p class="text-3xl font-bold mb-4">od 250 €</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-emerald-200 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white">Sve iz malog servisa</span>
+            </li>
+            <li class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-emerald-200 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white">Zamjena svih filtera</span>
+            </li>
+            <li class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-emerald-200 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white">Dijagnostika sistema</span>
+            </li>
+            <li class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-emerald-200 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white">Provjera i servis klime</span>
+            </li>
+          </ul>
+          <a href="#booking" class="block w-full text-center bg-white text-emerald-600 px-6 py-3 rounded-lg hover:bg-emerald-50 transition-colors font-semibold">
+            Zakažite
+          </a>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">KOMPLETAN</h3>
+          <p class="text-3xl font-bold text-gray-900 mb-4">od 450 €</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Sve iz velikog servisa</span>
+            </li>
+            <li class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Zamjena kočnica</span>
+            </li>
+            <li class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Geometrija i centriranje</span>
+            </li>
+            <li class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Detaljni izvještaj</span>
+            </li>
+          </ul>
+          <a href="#booking" class="block w-full text-center bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors font-semibold">
+            Zakažite
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="booking" class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Zakažite termin</h2>
+        <p class="text-xl text-gray-600">Odgovaramo za par sati. Besplatna dijagnostika za sve usluge.</p>
+      </div>
+      
+      <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+        <form action="#" method="post" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Ime i prezime *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+              />
+            </div>
+            
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Telefon *</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+              />
+            </div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="vehicle" class="block text-sm font-medium text-gray-700 mb-2">Marka i model vozila *</label>
+              <input 
+                type="text" 
+                id="vehicle" 
+                name="vehicle" 
+                required
+                placeholder="npr. VW Golf 7"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+              />
+            </div>
+            
+            <div>
+              <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Tip usluge *</label>
+              <select 
+                id="service" 
+                name="service" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+              >
+                <option value="">Izaberite uslugu</option>
+                <option value="mali-servis">Mali servis</option>
+                <option value="veliki-servis">Veliki servis</option>
+                <option value="dijagnostika">Dijagnostika</option>
+                <option value="klima">Klima servis</option>
+                <option value="gume">Gume</option>
+                <option value="mehanika">Mehanički radovi</option>
+                <option value="ostalo">Ostalo</option>
+              </select>
+            </div>
+          </div>
+          
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Dodatne informacije (opciono)</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="4"
+              placeholder="Opišite problem ili dodatne zahtjeve..."
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+            ></textarea>
+          </div>
+          
+          <button 
+            type="submit"
+            class="w-full bg-emerald-600 text-white px-6 py-4 rounded-lg hover:bg-emerald-700 transition-colors font-semibold text-lg"
+          >
+            Pošalji zahtjev
+          </button>
+          
+          <p class="text-sm text-gray-500 text-center">
+            Odgovaramo za par sati i potvrđujemo termin. Možete nas kontaktirati i telefonom.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Posjetite nas</h2>
+      <div class="bg-white border border-gray-200 rounded-2xl p-8 mb-8">
+        <div class="h-64 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+          <p class="text-gray-500">[Google Maps placeholder]</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6 text-left">
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-2">Adresa</h3>
+            <p class="text-gray-600">Industrijska zona bb<br />71000 Sarajevo, BiH</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-2">Radno vrijeme</h3>
+            <p class="text-gray-600">Pon-Pet: 08:00 - 17:00<br />Sub: 08:00 - 13:00</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-2">Telefon</h3>
+            <p class="text-gray-600">+387 61 123 456<br />+387 33 123 456</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-2">Email</h3>
+            <p class="text-gray-600">info@autoservis.ba</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <Footer slot="footer" />
+</BaseLayout>

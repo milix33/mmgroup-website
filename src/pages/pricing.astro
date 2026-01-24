@@ -1,0 +1,266 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import CTA from '../components/CTA.astro';
+---
+
+<BaseLayout 
+  title="Paketi i cijene — MMGroup" 
+  description="Transparentne cijene za landing stranice, business sajtove i web aplikacije. Od 199 € do custom rješenja."
+>
+  <Navbar slot="navbar" />
+  
+  <section class="py-20 bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">Paketi i cijene</h1>
+      <p class="text-xl text-gray-600">Transparentne cijene, bez skrivenih troškova.</p>
+    </div>
+  </section>
+  
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">START</h3>
+          <p class="text-4xl font-bold text-gray-900 mb-4">od 199 €</p>
+          <p class="text-gray-600 mb-6">Landing stranica, idealno za start i proizvode.</p>
+          
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">1 stranica (landing page)</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">Mobile-first responsive</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">SEO optimizacija (osnovno)</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">Kontakt forma</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">Analytics setup</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">Domen setup</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">Rok: 3–7 dana</span>
+            </li>
+          </ul>
+          
+          <a href="/contact" class="block w-full text-center bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors font-semibold">
+            Zatraži ponudu
+          </a>
+        </div>
+        
+        <div class="bg-indigo-600 text-white border-2 border-indigo-600 rounded-2xl p-8 shadow-lg relative transform md:scale-105">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-emerald-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+            Najpopularnije
+          </div>
+          <h3 class="text-2xl font-bold mb-2">PRO</h3>
+          <p class="text-4xl font-bold mb-4">od 399 €</p>
+          <p class="text-indigo-100 mb-6">Business sajt sa više stranica i CMS-om.</p>
+          
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-300 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white text-sm">Do 8 stranica (multi-page)</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-300 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white text-sm">CMS integracija (opciono)</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-300 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white text-sm">Blog ili news sekcija</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-300 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white text-sm">Napredna SEO optimizacija</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-300 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white text-sm">Custom dizajn & branding</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-300 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white text-sm">Integracije (mailing, CRM...)</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-300 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white text-sm">1 mjesec besplatne podrške</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-300 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-white text-sm">Rok: 1–3 sedmice</span>
+            </li>
+          </ul>
+          
+          <a href="/contact" class="block w-full text-center bg-white text-indigo-600 px-6 py-3 rounded-lg hover:bg-indigo-50 transition-colors font-semibold">
+            Zatraži ponudu
+          </a>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">CUSTOM</h3>
+          <p class="text-4xl font-bold text-gray-900 mb-4">Po dogovoru</p>
+          <p class="text-gray-600 mb-6">Web aplikacije i kompleksna rješenja.</p>
+          
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">Custom backend i baza</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">User management</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">Admin dashboard</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">API integracije</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">Automatizacije</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">Real-time funkcionalnosti</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">Dokumentacija i training</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700 text-sm">Rok: 4–12 sedmica</span>
+            </li>
+          </ul>
+          
+          <a href="/contact" class="block w-full text-center bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors font-semibold">
+            Kontaktiraj nas
+          </a>
+        </div>
+        
+      </div>
+      
+      <div class="mt-16 bg-gray-50 rounded-2xl p-8 text-center">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Hosting i održavanje</h3>
+        <p class="text-lg text-gray-700 mb-2">
+          <strong>Od 15–30 € mjesečno</strong>
+        </p>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Hosting, SSL, backup, update, monitoring i tehnička podrška. Cijena zavisi od obima sajta i prometa.
+        </p>
+      </div>
+      
+      <div class="mt-12 text-center">
+        <p class="text-sm text-gray-600 max-w-2xl mx-auto">
+          <strong>Napomena:</strong> Tačna cijena zavisi od obima projekta, sadržaja i specifičnih zahtjeva. Kontaktirajte nas za preciznu ponudu.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Način plaćanja</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Jednokratna uplata</h3>
+          <p class="text-gray-600 mb-4">
+            50% avans pri početku — 50% po završetku i prije launch-a.
+          </p>
+          <p class="text-sm text-gray-500">
+            Za START i PRO pakete.
+          </p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Fazno (milestones)</h3>
+          <p class="text-gray-600 mb-4">
+            Podijelimo projekat na faze — plaćate po završetku svake faze.
+          </p>
+          <p class="text-sm text-gray-500">
+            Za CUSTOM projekte (web aplikacije).
+          </p>
+        </div>
+      </div>
+      
+      <div class="mt-8 bg-indigo-50 border border-indigo-200 rounded-xl p-6 text-center">
+        <p class="text-gray-700">
+          <strong>Valuta:</strong> EUR (€) • <strong>Plaćanje:</strong> Bankovno ili PayPal
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <CTA 
+    title="Zatraži ponudu"
+    description="Pošaljite upit sa kratkim opisom projekta — odgovaramo za par sati sa preciznom cijenom."
+    href="/contact"
+  />
+  
+  <Footer slot="footer" />
+</BaseLayout>

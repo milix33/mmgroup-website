@@ -1,0 +1,238 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import CTA from '../components/CTA.astro';
+---
+
+<BaseLayout 
+  title="Radovi i projekti — MMGroup" 
+  description="Pogledajte naše projekte: web aplikacije, landing stranice i business sajtovi koje smo napravili za klijente."
+>
+  <Navbar slot="navbar" />
+  
+  <section class="py-20 bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">Radovi i projekti</h1>
+      <p class="text-xl text-gray-600">Case studije i demo stranice koje pokazuju kako radimo i šta možemo.</p>
+    </div>
+  </section>
+  
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Case studije</h2>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+          <div class="grid md:grid-cols-2 gap-8 p-8">
+            <div>
+              <div class="h-64 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl mb-6"></div>
+            </div>
+            <div class="flex flex-col justify-center">
+              <span class="inline-block px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold mb-4 w-fit">Web aplikacija</span>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">AIFleetControl</h3>
+              <p class="text-gray-600 mb-6">
+                Kompleksan fleet management sistem za logističke firme. Aplikacija omogućava upravljanje voznim parkom, praćenje ruta u real-time, izdavanje naloga, statistike i izvještaje, te višejezičnu komunikaciju između dispečera i vozača.
+              </p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-gray-700">Real-time GPS tracking vozila</span>
+                </div>
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-gray-700">Automatsko generisanje naloga i ruta</span>
+                </div>
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-gray-700">Dashboard sa statistikama i KPI metrikama</span>
+                </div>
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-gray-700">Višejezična komunikacija (BA/DE/EN)</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-500 mb-4">
+                <strong>Tech stack:</strong> Next.js, PostgreSQL, Prisma, Tailwind, Mapbox
+              </p>
+              <p class="text-sm text-indigo-600 font-semibold">
+                Demo dostupan na upit — zahtjeva NDA
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Demo stranice</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          Ovo su demo stranice koje pokazuju kako radimo landing i business sajtove. Kliknite da vidite live primjer.
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <a href="/demo/autoservis" class="block bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+            <div class="h-64 bg-gradient-to-br from-emerald-500 to-teal-600 relative overflow-hidden">
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all flex items-center justify-center">
+                <span class="text-white font-semibold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                  Pogledaj demo →
+                </span>
+              </div>
+            </div>
+            <div class="p-6">
+              <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-600 rounded-full text-xs font-semibold mb-3">Landing stranica</span>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Auto servis</h3>
+              <p class="text-gray-600 mb-4">
+                Moderna landing stranica za auto servis sa hero sekcijom, uslugama, booking sistemom, prikazom cijene i kontakt formom.
+              </p>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Hero sa CTA</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Pregled usluga i cijene</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Booking forma</span>
+                </div>
+              </div>
+              <span class="text-indigo-600 font-semibold group-hover:text-indigo-700">
+                Otvori demo →
+              </span>
+            </div>
+          </a>
+          
+          <a href="/demo/transport" class="block bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+            <div class="h-64 bg-gradient-to-br from-orange-500 to-red-600 relative overflow-hidden">
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all flex items-center justify-center">
+                <span class="text-white font-semibold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                  Pogledaj demo →
+                </span>
+              </div>
+            </div>
+            <div class="p-6">
+              <span class="inline-block px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-xs font-semibold mb-3">Business sajt</span>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Transport firma</h3>
+              <p class="text-gray-600 mb-4">
+                Business sajt za transport firmu sa prikazom flote, relacijama, traženje ponude, O nama sekcijom i kontaktom.
+              </p>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Prikaz flote vozila</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Relacije i usluge</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Traženje ponude</span>
+                </div>
+              </div>
+              <span class="text-indigo-600 font-semibold group-hover:text-indigo-700">
+                Otvori demo →
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Kako isporučujemo</h2>
+      
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center">
+          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            1
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">Discovery</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Razgovaramo o vašim potrebama, ciljevima i viziji. Definišemo scope i deliverables.
+          </p>
+          <div class="text-xs text-gray-500">
+            <strong>Output:</strong> Brief dokument
+          </div>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center">
+          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            2
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">Demo</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Kreiramo demo verziju (za 24–48h) koja pokazuje dizajn i strukturu.
+          </p>
+          <div class="text-xs text-gray-500">
+            <strong>Output:</strong> Live demo link
+          </div>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center">
+          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            3
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">Iteracija</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Prilagođavamo dizajn, unosite sadržaj, dodajemo feature-e. Testirate i dajete feedback.
+          </p>
+          <div class="text-xs text-gray-500">
+            <strong>Output:</strong> Finalna verzija
+          </div>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center">
+          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            4
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">Launch & Support</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Postavljamo sajt live, povezujemo domen, podešavamo analytics. Pružamo podršku.
+          </p>
+          <div class="text-xs text-gray-500">
+            <strong>Output:</strong> Live sajt + docs
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-12 bg-indigo-50 border border-indigo-200 rounded-xl p-6 text-center">
+        <p class="text-gray-700">
+          <strong>Prosječno vrijeme:</strong> Landing stranice 3–7 dana • Business sajtovi 1–3 sedmice • Web aplikacije 4–12 sedmica
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <CTA 
+    title="Zatraži prezentaciju"
+    description="Želite da vidimo šta možemo uraditi za vas? Pošaljite upit i dobijate demo za 24–48h."
+    href="/contact"
+  />
+  
+  <Footer slot="footer" />
+</BaseLayout>

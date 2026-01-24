@@ -1,0 +1,483 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout 
+  title="TransSpeed — Pouzdani transport i logistika" 
+  description="Brz i siguran transport robe širom Europe. Moderna flota, praćenje u realnom vremenu, konkurentne cijene."
+>
+  <Navbar slot="navbar" />
+  
+  <section class="py-20 bg-gradient-to-br from-orange-500 to-red-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
+            Pouzdani transport i logistika širom Europe
+          </h1>
+          <p class="text-xl text-orange-50 mb-8">
+            Više od 20 godina iskustva. Moderna flota od 50+ vozila. Praćenje u realnom vremenu. Vaša roba je u sigurnim rukama.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a 
+              href="#quote" 
+              class="inline-flex items-center justify-center px-8 py-4 bg-white text-orange-600 rounded-lg hover:bg-orange-50 transition-colors font-semibold text-lg"
+            >
+              Zatražite ponudu
+            </a>
+            <a 
+              href="#fleet" 
+              class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white hover:text-orange-600 transition-colors font-semibold text-lg"
+            >
+              Naša flota
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-orange-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-orange-50">Real-time tracking</span>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-orange-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-orange-50">24/7 podrška</span>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-orange-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-orange-50">Osiguranje robe uključeno</span>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-orange-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-orange-50">Express isporuka dostupna</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Naše usluge</h2>
+        <p class="text-xl text-gray-600">Kompletna logistička rješenja za vaše potrebe</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Nacionalni transport</h3>
+          <p class="text-gray-600 mb-4">Brza i pouzdana dostava širom BiH. Express opcija dostupna za hitne pošiljke.</p>
+          <p class="text-orange-600 font-semibold">24-48h isporuka</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Međunarodni transport</h3>
+          <p class="text-gray-600 mb-4">Redovne linije za EU: Njemačka, Austrija, Slovenija, Hrvatska, Srbija i dalje.</p>
+          <p class="text-orange-600 font-semibold">3-5 dana isporuka</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Skladištenje</h3>
+          <p class="text-gray-600 mb-4">Moderni skladišni prostor sa kontrolom temperature i vlage. Sigurnost 24/7.</p>
+          <p class="text-orange-600 font-semibold">od 0.5 € / m² / dan</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Express isporuka</h3>
+          <p class="text-gray-600 mb-4">Hitne pošiljke sa garantovanim rokom isporuke. Prioritet u svim fazama transporta.</p>
+          <p class="text-orange-600 font-semibold">12-24h isporuka</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Specijalni transport</h3>
+          <p class="text-gray-600 mb-4">Transport negabaritne robe, opasnih materija, hladnjača. Sve dozvole i certifikati.</p>
+          <p class="text-orange-600 font-semibold">Cijena na upit</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Logistički consulting</h3>
+          <p class="text-gray-600 mb-4">Optimizacija transport procesa, planiranje ruta, analiza troškova. Smanjite troškove do 30%.</p>
+          <p class="text-orange-600 font-semibold">Besplatna analiza</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="fleet" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Naša flota</h2>
+        <p class="text-xl text-gray-600">Moderna vozila i oprema za sve vrste transporta</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-orange-400 to-red-500"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Kamioni (18+ tona)</h3>
+            <ul class="space-y-2 mb-4">
+              <li class="flex items-center text-sm text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>25 vozila u floti</span>
+              </li>
+              <li class="flex items-center text-sm text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Kapacitet: 24 palete / 33m³</span>
+              </li>
+              <li class="flex items-center text-sm text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>GPS praćenje</span>
+              </li>
+            </ul>
+            <p class="text-orange-600 font-semibold">Za međunarodni transport</p>
+          </div>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-orange-300 to-orange-500"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Kombiji (do 3.5t)</h3>
+            <ul class="space-y-2 mb-4">
+              <li class="flex items-center text-sm text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>15 vozila u floti</span>
+              </li>
+              <li class="flex items-center text-sm text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Kapacitet: 6 palete / 12m³</span>
+              </li>
+              <li class="flex items-center text-sm text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Express dostava</span>
+              </li>
+            </ul>
+            <p class="text-orange-600 font-semibold">Za brzu dostavu</p>
+          </div>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Hladnjače</h3>
+            <ul class="space-y-2 mb-4">
+              <li class="flex items-center text-sm text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>10 vozila u floti</span>
+              </li>
+              <li class="flex items-center text-sm text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Temperatura: -25°C do +25°C</span>
+              </li>
+              <li class="flex items-center text-sm text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>ATP certifikat</span>
+              </li>
+            </ul>
+            <p class="text-orange-600 font-semibold">Za osjetljivu robu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Naše relacije</h2>
+        <p class="text-xl text-gray-600">Redovne linije sa garantovanim rokovima</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">BiH → Njemačka</h3>
+          <p class="text-sm text-gray-600 mb-3">Redovne linije 3x sedmično</p>
+          <p class="text-orange-600 font-semibold text-sm">3-4 dana</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">BiH → Austrija</h3>
+          <p class="text-sm text-gray-600 mb-3">Redovne linije 2x sedmično</p>
+          <p class="text-orange-600 font-semibold text-sm">2-3 dana</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">BiH → Slovenija</h3>
+          <p class="text-sm text-gray-600 mb-3">Dnevne linije</p>
+          <p class="text-orange-600 font-semibold text-sm">1-2 dana</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">BiH → Hrvatska</h3>
+          <p class="text-sm text-gray-600 mb-3">Dnevne linije</p>
+          <p class="text-orange-600 font-semibold text-sm">24-48h</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">BiH → Srbija</h3>
+          <p class="text-sm text-gray-600 mb-3">Dnevne linije</p>
+          <p class="text-orange-600 font-semibold text-sm">24-48h</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">BiH → Italija</h3>
+          <p class="text-sm text-gray-600 mb-3">Redovne linije 2x sedmično</p>
+          <p class="text-orange-600 font-semibold text-sm">3-4 dana</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">BiH → Švicarska</h3>
+          <p class="text-sm text-gray-600 mb-3">Redovne linije 1x sedmično</p>
+          <p class="text-orange-600 font-semibold text-sm">4-5 dana</p>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">BiH → Ostalo EU</h3>
+          <p class="text-sm text-gray-600 mb-3">Na upit</p>
+          <p class="text-orange-600 font-semibold text-sm">5-7 dana</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="quote" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Zatražite ponudu</h2>
+        <p class="text-xl text-gray-600">Odgovaramo za par sati sa detaljnom ponudom i rokom isporuke.</p>
+      </div>
+      
+      <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+        <form action="#" method="post" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Ime i prezime / Firma *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              />
+            </div>
+            
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Telefon *</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              />
+            </div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="from" class="block text-sm font-medium text-gray-700 mb-2">Polazište *</label>
+              <input 
+                type="text" 
+                id="from" 
+                name="from" 
+                required
+                placeholder="Grad, država"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              />
+            </div>
+            
+            <div>
+              <label for="to" class="block text-sm font-medium text-gray-700 mb-2">Odredište *</label>
+              <input 
+                type="text" 
+                id="to" 
+                name="to" 
+                required
+                placeholder="Grad, država"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              />
+            </div>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-6">
+            <div>
+              <label for="weight" class="block text-sm font-medium text-gray-700 mb-2">Težina (kg) *</label>
+              <input 
+                type="number" 
+                id="weight" 
+                name="weight" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              />
+            </div>
+            
+            <div>
+              <label for="volume" class="block text-sm font-medium text-gray-700 mb-2">Volumen (m³)</label>
+              <input 
+                type="number" 
+                id="volume" 
+                name="volume" 
+                step="0.1"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              />
+            </div>
+            
+            <div>
+              <label for="pallets" class="block text-sm font-medium text-gray-700 mb-2">Broj paleta</label>
+              <input 
+                type="number" 
+                id="pallets" 
+                name="pallets"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              />
+            </div>
+          </div>
+          
+          <div>
+            <label for="cargo" class="block text-sm font-medium text-gray-700 mb-2">Opis robe *</label>
+            <textarea 
+              id="cargo" 
+              name="cargo" 
+              rows="3"
+              required
+              placeholder="Vrsta robe, posebni zahtjevi..."
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            ></textarea>
+          </div>
+          
+          <div>
+            <label for="date" class="block text-sm font-medium text-gray-700 mb-2">Željeni datum preuzimanja</label>
+            <input 
+              type="date" 
+              id="date" 
+              name="date"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            />
+          </div>
+          
+          <button 
+            type="submit"
+            class="w-full bg-orange-600 text-white px-6 py-4 rounded-lg hover:bg-orange-700 transition-colors font-semibold text-lg"
+          >
+            Pošalji zahtjev
+          </button>
+          
+          <p class="text-sm text-gray-500 text-center">
+            Odgovaramo za par sati sa tačnom cijenom i rokom isporuke. Sve cijene uključuju osiguranje.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">O nama</h2>
+      </div>
+      
+      <div class="bg-white border border-gray-200 rounded-2xl p-8">
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          TransSpeed je porodična firma osnovana 2004. godine. Počeli smo sa 2 kamiona i 5 zaposlenih, danas imamo flotu od 50+ vozila i 80 zaposlenih. Naš fokus je na pouzdanosti, brzini i kvalitetu usluge.
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-8 mt-8">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-orange-600 mb-2">20+</div>
+            <p class="text-gray-600">Godina iskustva</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-orange-600 mb-2">50+</div>
+            <p class="text-gray-600">Vozila u floti</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-orange-600 mb-2">15K+</div>
+            <p class="text-gray-600">Pošiljki godišnje</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Kontakt</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Telefon</h3>
+          <p class="text-gray-600">+387 61 234 567<br />+387 33 234 567</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Email</h3>
+          <p class="text-gray-600">info@transspeed.ba<br />booking@transspeed.ba</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Adresa</h3>
+          <p class="text-gray-600">Logistički centar<br />71000 Sarajevo, BiH</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <Footer slot="footer" />
+</BaseLayout>
