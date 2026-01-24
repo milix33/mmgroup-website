@@ -170,6 +170,8 @@ OPCIJA 4: CUSTOM HOSTING (VPS, shared hosting)
 📄 README.md         — Tehnička dokumentacija
 📄 SUMMARY.md        — Kompletan pregled stranica
 📄 DEPLOYMENT.md     — Detaljne deploy instrukcije
+📄 GIT_SETUP.md      — Git i GitHub setup (✅ GOTOVO)
+📄 VERCEL_DEPLOY.md  — Vercel deployment vodič
 
 ================================================================================
                           TRENUTNI STATUS
@@ -183,6 +185,8 @@ OPCIJA 4: CUSTOM HOSTING (VPS, shared hosting)
 ✅ Responsive: Testiran
 ✅ SEO: Optimizovan
 ✅ Production: SPREMAN
+✅ Git: Inicijalizovan i povezan sa GitHub-om
+✅ GitHub repo: https://github.com/milix33/mmgroup-website
 
 ================================================================================
                               GOTOVO!

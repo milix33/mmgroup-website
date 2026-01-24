@@ -16,6 +16,8 @@
 
 ### Za deployment
 - **[DEPLOYMENT.md](DEPLOYMENT.md)** — Deploy na Vercel/Netlify/Cloudflare
+- **[VERCEL_DEPLOY.md](VERCEL_DEPLOY.md)** — ⭐ Step-by-step Vercel deployment
+- **[GIT_SETUP.md](GIT_SETUP.md)** — ✅ Git & GitHub setup (completed)
 - **[STATUS.md](STATUS.md)** — Build status i production checklist
 
 ---
@@ -125,6 +127,9 @@ MMGroup26/
 - ✅ System font stack
 - ✅ Production build spreman
 - ✅ Helper batch fajlovi za Windows
+- ✅ **Git repo inicijalizovan**
+- ✅ **Povezan sa GitHub:** https://github.com/milix33/mmgroup-website
+- ✅ **Initial commit i push kompletni**
 
 ---
 
@@ -142,12 +147,21 @@ Detalji u: **[DEPLOYMENT.md](DEPLOYMENT.md)**
 
 ## 🌐 Deploy opcije
 
-- **Vercel** — Besplatno, brzo (preporučeno)
+- **Vercel** — Besplatno, brzo (⭐ preporučeno)
 - **Netlify** — Besplatno, jednostavno
 - **Cloudflare Pages** — Unlimited bandwidth
 - **Custom hosting** — VPS ili shared hosting
 
-Uputstva: **[DEPLOYMENT.md](DEPLOYMENT.md)**
+### 🚀 Quick Deploy sa Vercel
+
+1. Idi na https://vercel.com
+2. Login sa GitHub nalogom
+3. Import `milix33/mmgroup-website` repo
+4. Klikni Deploy
+5. Gotovo! Live za 60 sekundi ✨
+
+**Detaljno:** **[VERCEL_DEPLOY.md](VERCEL_DEPLOY.md)**
+**Sve opcije:** **[DEPLOYMENT.md](DEPLOYMENT.md)**
 
 ---
 
