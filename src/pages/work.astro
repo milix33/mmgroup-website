@@ -82,15 +82,29 @@ import CTA from '../components/CTA.astro';
         <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm mt-8">
           <div class="grid md:grid-cols-2 gap-8 p-8">
             <div class="flex items-center justify-center bg-gray-50 rounded-xl p-8">
-              <img 
-                src="/ziptvbox-logo.png" 
-                alt="ZipTV Box" 
-                class="max-w-full h-auto max-h-48 object-contain"
-              />
+              <a 
+                href="https://ziptvbox.com/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block hover:scale-105 transition-transform duration-200"
+              >
+                <img 
+                  src="/ziptvbox-logo.png" 
+                  alt="ZipTV Box" 
+                  class="max-w-full h-auto max-h-48 object-contain cursor-pointer"
+                />
+              </a>
             </div>
             <div class="flex flex-col justify-center">
               <span class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold mb-4 w-fit">Web platforma</span>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">ZipTV Box</h3>
+              <a 
+                href="https://ziptvbox.com/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-2xl font-bold text-gray-900 mb-4 hover:text-purple-600 transition-colors"
+              >
+                ZipTV Box
+              </a>
               <p class="text-gray-600 mb-6">
                 Kompletna IPTV media player platforma koja omogućava streaming live TV kanala, filmova i serija. Moderna web aplikacija sa naprednim features-ima za upravljanje sadržajem, korisnički računi, playlist management i responsive dizajn.
               </p>
