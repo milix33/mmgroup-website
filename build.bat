@@ -1,5 +1,5 @@
 @echo off
-echo Building MMGroup site for production...
+echo Building ZIPTV TECH SOLUTIONS site for production...
 echo.
 
 set ASTRO_TELEMETRY_DISABLED=1

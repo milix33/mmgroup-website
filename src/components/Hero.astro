@@ -10,31 +10,9 @@ interface Props {
 const { title, subtitle, primaryCta, secondaryCta, gradient = true } = Astro.props;
 ---
 
-<section class={`py-20 relative overflow-hidden ${gradient ? 'bg-gradient-to-br from-indigo-50 via-white to-emerald-50' : 'bg-white'}`}>
-  <!-- Floating Logo Background (Watermark Effect) -->
-  <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
-    <img 
-      src="/logo.png" 
-      alt="MMGroup" 
-      class="w-96 h-96 object-contain hero-logo-watermark"
-    />
-  </div>
+
   
-  <!-- Floating Logo (Top Right) -->
-  <div class="absolute top-8 right-8 hidden lg:block">
-    <div class="hero-logo-float">
-      <div class="relative group">
-        <div class="absolute inset-0 bg-indigo-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-        <div class="relative bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl border border-gray-200 group-hover:shadow-2xl transition-all duration-300 group-hover:scale-110">
-          <img 
-            src="/logo.png" 
-            alt="MMGroup" 
-            class="w-20 h-20 object-contain"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
+
   
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">

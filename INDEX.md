@@ -104,7 +104,7 @@ MMGroup26/
 | `/` | `index.astro` | Home — Hero, usluge, proces, radovi |
 | `/services` | `services.astro` | Usluge detaljno (4 kategorije) |
 | `/work` | `work.astro` | Radovi i case studies |
-| `/about` | `about.astro` | O MMGroup |
+| `/about` | `about.astro` | O ZIPTV TECH SOLUTIONS |
 | `/pricing` | `pricing.astro` | Paketi i cijene |
 | `/contact` | `contact.astro` | Kontakt + forma + FAQ |
 | `/privacy` | `privacy.astro` | Privacy Policy |
@@ -199,4 +199,4 @@ Sajt je **production-ready**.
 
 ---
 
-© 2026 MMGroup. Made with Astro + Tailwind CSS.
+© 2026 ZIPTV TECH SOLUTIONS. Made with Astro + Tailwind CSS.

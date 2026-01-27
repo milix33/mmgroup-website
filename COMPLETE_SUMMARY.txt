@@ -194,7 +194,7 @@ STRANICE:
    / (Home) — Hero, usluge, proces, radovi, paketi
    /services — 4 kategorije detaljno
    /work — Case studies + demo projekti
-   /about — O MMGroup
+   /about — O ZIPTV TECH SOLUTIONS
    /pricing — 3 paketa (START/PRO/CUSTOM)
    /contact — Forma + WhatsApp/Viber + FAQ
    /privacy — Privacy Policy
