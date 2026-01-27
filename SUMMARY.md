@@ -39,7 +39,7 @@
    - START: od 199 €
    - PRO: od 399 € (najpopularnije)
    - CUSTOM: po dogovoru
-   - Hosting: 15–30 € mjesečno
+   - Hosting: 30–60 KM mjesečno
    - Način plaćanja
    - CTA banner
 
