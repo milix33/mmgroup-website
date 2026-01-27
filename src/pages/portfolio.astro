@@ -6,15 +6,15 @@ import CTA from '../components/CTA.astro';
 ---
 
 <BaseLayout 
-  title="Radovi i projekti — ZIPTV TECH SOLUTIONS" 
+  title="Portfolio — ZIPTV TECH SOLUTIONS" 
   description="Pogledajte naše projekte: web aplikacije, landing stranice i business sajtovi koje smo napravili za klijente."
 >
   <Navbar slot="navbar" />
   
   <section class="py-20 bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">Radovi i projekti</h1>
-      <p class="text-xl text-gray-600">Case studije i demo stranice koje pokazuju kako radimo i šta možemo.</p>
+      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">Portfolio</h1>
+      <p class="text-xl text-gray-600">Case studije i projekti koje pokazuju kako radimo i šta možemo.</p>
     </div>
   </section>
   
@@ -23,7 +23,148 @@ import CTA from '../components/CTA.astro';
       <div class="mb-16">
         <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Case studije</h2>
         
-        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+        <!-- Dr KOLAROV Demo -->
+        <div class="bg-white border-2 border-amber-200 rounded-2xl overflow-hidden shadow-sm relative">
+          <div class="absolute top-4 right-4">
+            <span class="inline-block px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-semibold border border-amber-300">
+              DEMO • NEPOTPUNO
+            </span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8 p-8">
+            <div class="flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl">
+              <div class="text-center p-8">
+                <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900">Dr KOLAROV</h3>
+                <p class="text-sm text-gray-500 mt-2">Stomatološka ambulanta</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center">
+              <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4 w-fit">Business sajt</span>
+              <a 
+                href="https://drkolarov.vercel.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-2xl font-bold text-gray-900 mb-4 hover:text-blue-600 transition-colors"
+              >
+                Dr KOLAROV
+              </a>
+              <p class="text-gray-600 mb-4">
+                Stomatološka ambulanta u Prnjavoru. Moderna business stranica sa prikazom usluga, galerijom radova, kontakt formom i sistemom za zakazivanje termina.
+              </p>
+              <p class="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3 mb-4">
+                <strong>Napomena:</strong> Ovo je demo verzija stranice koja nije potpuno finalizovana. Prikazuje osnovnu strukturu i dizajn.
+              </p>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-gray-700">Prikaz usluga i cijena</span>
+                </div>
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-gray-700">Galerija radova</span>
+                </div>
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-gray-700">Kontakt forma i zakazivanje</span>
+                </div>
+              </div>
+              <a 
+                href="https://drkolarov.vercel.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center text-sm text-indigo-600 font-semibold hover:text-indigo-700"
+              >
+                Posjetite demo
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Dr BASTAŠIĆ Demo -->
+        <div class="bg-white border-2 border-amber-200 rounded-2xl overflow-hidden shadow-sm mt-8 relative">
+          <div class="absolute top-4 right-4">
+            <span class="inline-block px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-semibold border border-amber-300">
+              DEMO • NEPOTPUNO
+            </span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8 p-8">
+            <div class="flex items-center justify-center bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl">
+              <div class="text-center p-8">
+                <div class="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900">Dr BASTAŠIĆ</h3>
+                <p class="text-sm text-gray-500 mt-2">Stomatološka ordinacija</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center">
+              <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-600 rounded-full text-sm font-semibold mb-4 w-fit">Business sajt</span>
+              <a 
+                href="https://bastasic.vercel.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-2xl font-bold text-gray-900 mb-4 hover:text-emerald-600 transition-colors"
+              >
+                STOMATOLOGIJA dr BASTAŠIĆ
+              </a>
+              <p class="text-gray-600 mb-4">
+                Stomatološka ordinacija u Banja Luci. Profesionalna business stranica sa detaljnim prikazom usluga, tima, FAQ sekcijom i direktnom komunikacijom.
+              </p>
+              <p class="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3 mb-4">
+                <strong>Napomena:</strong> Ovo je demo verzija stranice koja nije potpuno finalizovana. Prikazuje osnovnu strukturu i dizajn.
+              </p>
+              <div class="space-y-2 mb-4">
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-gray-700">Prikaz usluga i tima</span>
+                </div>
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-gray-700">FAQ sekcija</span>
+                </div>
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-gray-700">Kontakt i lokacija</span>
+                </div>
+              </div>
+              <a 
+                href="https://bastasic.vercel.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center text-sm text-indigo-600 font-semibold hover:text-indigo-700"
+              >
+                Posjetite demo
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- AIFleetControl -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm mt-8">
           <div class="grid md:grid-cols-2 gap-8 p-8">
             <div class="flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl">
               <div class="text-center p-8">
@@ -79,6 +220,7 @@ import CTA from '../components/CTA.astro';
           </div>
         </div>
         
+        <!-- ZipTV Box -->
         <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm mt-8">
           <div class="grid md:grid-cols-2 gap-8 p-8">
             <div class="flex items-center justify-center bg-gray-50 rounded-xl p-8">
