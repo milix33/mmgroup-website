@@ -11,503 +11,227 @@ import CTA from '../components/CTA.astro';
 >
   <Navbar slot="navbar" />
   
-  <section class="py-20 bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">Portfolio</h1>
-      <p class="text-xl text-gray-600">Case studije i projekti koje pokazuju kako radimo i šta možemo.</p>
+  <!-- Compact Hero -->
+  <section class="py-12 bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">Portfolio</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">Projekti koji pokazuju naš rad i rezultate</p>
+      </div>
     </div>
   </section>
   
-  <section class="py-20">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="mb-16">
-        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Case studije</h2>
+  <!-- Modern Grid Portfolio -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Projects Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Dr KOLAROV Demo -->
-        <div class="bg-white border-2 border-amber-200 rounded-2xl overflow-hidden shadow-sm relative">
-          <div class="absolute top-4 right-4">
-            <span class="inline-block px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-semibold border border-amber-300">
-              DEMO • NEPOTPUNO
+        <!-- Dr KOLAROV -->
+        <a 
+          href="https://drkolarov.vercel.app/" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group bg-white border-2 border-amber-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-amber-300 transition-all duration-300 relative"
+        >
+          <div class="absolute top-3 right-3 z-10">
+            <span class="inline-block px-2 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-semibold border border-amber-300">
+              DEMO
             </span>
           </div>
-          <div class="grid md:grid-cols-2 gap-8 p-8">
-            <div class="flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl">
-              <div class="text-center p-8">
-                <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900">Dr KOLAROV</h3>
-                <p class="text-sm text-gray-500 mt-2">Stomatološka ambulanta</p>
-              </div>
-            </div>
-            <div class="flex flex-col justify-center">
-              <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4 w-fit">Business sajt</span>
-              <a 
-                href="https://drkolarov.vercel.app/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-2xl font-bold text-gray-900 mb-4 hover:text-blue-600 transition-colors"
-              >
-                Dr KOLAROV
-              </a>
-              <p class="text-gray-600 mb-4">
-                Stomatološka ambulanta u Prnjavoru. Moderna business stranica sa prikazom usluga, galerijom radova, kontakt formom i sistemom za zakazivanje termina.
-              </p>
-              <p class="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3 mb-4">
-                <strong>Napomena:</strong> Ovo je demo verzija stranice koja nije potpuno finalizovana. Prikazuje osnovnu strukturu i dizajn.
-              </p>
-              <div class="space-y-2 mb-4">
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Prikaz usluga i cijena</span>
-                </div>
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Galerija radova</span>
-                </div>
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Kontakt forma i zakazivanje</span>
-                </div>
-              </div>
-              <a 
-                href="https://drkolarov.vercel.app/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center text-sm text-indigo-600 font-semibold hover:text-indigo-700"
-              >
-                Posjetite demo
-                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          <div class="h-48 bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-6">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
-              </a>
+              </div>
+              <h3 class="text-lg font-bold text-gray-900">Dr KOLAROV</h3>
+              <p class="text-xs text-gray-500 mt-1">Stomatološka ambulanta</p>
             </div>
           </div>
-        </div>
-        
-        <!-- Dr BASTAŠIĆ Demo -->
-        <div class="bg-white border-2 border-amber-200 rounded-2xl overflow-hidden shadow-sm mt-8 relative">
-          <div class="absolute top-4 right-4">
-            <span class="inline-block px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-semibold border border-amber-300">
-              DEMO • NEPOTPUNO
+          <div class="p-5">
+            <span class="inline-block px-2 py-1 bg-blue-100 text-blue-600 rounded-md text-xs font-medium mb-3">Business sajt</span>
+            <p class="text-sm text-gray-600 mb-3 line-clamp-2">Stomatološka ambulanta u Prnjavoru sa modernim dizajnom i sistemom za zakazivanje.</p>
+            <p class="text-xs text-amber-700 mb-3">Demo verzija</p>
+            <span class="text-xs text-indigo-600 font-semibold group-hover:text-indigo-700 inline-flex items-center">
+              Posjetite demo →
             </span>
           </div>
-          <div class="grid md:grid-cols-2 gap-8 p-8">
-            <div class="flex items-center justify-center bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl">
-              <div class="text-center p-8">
-                <div class="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900">Dr BASTAŠIĆ</h3>
-                <p class="text-sm text-gray-500 mt-2">Stomatološka ordinacija</p>
-              </div>
-            </div>
-            <div class="flex flex-col justify-center">
-              <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-600 rounded-full text-sm font-semibold mb-4 w-fit">Business sajt</span>
-              <a 
-                href="https://bastasic.vercel.app/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-2xl font-bold text-gray-900 mb-4 hover:text-emerald-600 transition-colors"
-              >
-                STOMATOLOGIJA dr BASTAŠIĆ
-              </a>
-              <p class="text-gray-600 mb-4">
-                Stomatološka ordinacija u Banja Luci. Profesionalna business stranica sa detaljnim prikazom usluga, tima, FAQ sekcijom i direktnom komunikacijom.
-              </p>
-              <p class="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3 mb-4">
-                <strong>Napomena:</strong> Ovo je demo verzija stranice koja nije potpuno finalizovana. Prikazuje osnovnu strukturu i dizajn.
-              </p>
-              <div class="space-y-2 mb-4">
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Prikaz usluga i tima</span>
-                </div>
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">FAQ sekcija</span>
-                </div>
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Kontakt i lokacija</span>
-                </div>
-              </div>
-              <a 
-                href="https://bastasic.vercel.app/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center text-sm text-indigo-600 font-semibold hover:text-indigo-700"
-              >
-                Posjetite demo
-                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </a>
+        
+        <!-- Dr BASTAŠIĆ -->
+        <a 
+          href="https://bastasic.vercel.app/" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group bg-white border-2 border-amber-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-amber-300 transition-all duration-300 relative"
+        >
+          <div class="absolute top-3 right-3 z-10">
+            <span class="inline-block px-2 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-semibold border border-amber-300">
+              DEMO
+            </span>
+          </div>
+          <div class="h-48 bg-gradient-to-br from-emerald-50 to-teal-50 flex items-center justify-center p-6">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
-              </a>
+              </div>
+              <h3 class="text-lg font-bold text-gray-900">Dr BASTAŠIĆ</h3>
+              <p class="text-xs text-gray-500 mt-1">Stomatološka ordinacija</p>
             </div>
           </div>
-        </div>
+          <div class="p-5">
+            <span class="inline-block px-2 py-1 bg-emerald-100 text-emerald-600 rounded-md text-xs font-medium mb-3">Business sajt</span>
+            <p class="text-sm text-gray-600 mb-3 line-clamp-2">Stomatološka ordinacija u Banja Luci sa profesionalnim prikazom usluga i tima.</p>
+            <p class="text-xs text-amber-700 mb-3">Demo verzija</p>
+            <span class="text-xs text-indigo-600 font-semibold group-hover:text-indigo-700 inline-flex items-center">
+              Posjetite demo →
+            </span>
+          </div>
+        </a>
+        
+        <!-- RegiAlert -->
+        <a 
+          href="https://regalert.vercel.app/" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all duration-300"
+        >
+          <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
+            <img 
+              src="/regialert-logo.svg" 
+              alt="RegiAlert" 
+              class="max-w-full h-auto max-h-24 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-5">
+            <span class="inline-block px-2 py-1 bg-blue-100 text-blue-600 rounded-md text-xs font-medium mb-3">Web aplikacija</span>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">RegiAlert</h3>
+            <p class="text-sm text-gray-600 mb-3 line-clamp-2">Automatska SMS obavještenja za isteke registracije i zakazane termine.</p>
+            <span class="text-xs text-indigo-600 font-semibold group-hover:text-indigo-700 inline-flex items-center">
+              Posjetite sajt →
+            </span>
+          </div>
+        </a>
+        
+        <!-- SRT Transport -->
+        <a 
+          href="https://srtpedja.vercel.app/" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-emerald-300 transition-all duration-300"
+        >
+          <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
+            <img 
+              src="/srt-transport-logo.svg" 
+              alt="SRT Transport" 
+              class="max-w-full h-auto max-h-24 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          <div class="p-5">
+            <span class="inline-block px-2 py-1 bg-emerald-100 text-emerald-600 rounded-md text-xs font-medium mb-3">Business sajt</span>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">SRT Transport</h3>
+            <p class="text-sm text-gray-600 mb-3 line-clamp-2">Pouzdan prevoz robe i vozila u BiH i Evropi sa modernim business sajtom.</p>
+            <span class="text-xs text-indigo-600 font-semibold group-hover:text-indigo-700 inline-flex items-center">
+              Posjetite sajt →
+            </span>
+          </div>
+        </a>
         
         <!-- AIFleetControl -->
-        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm mt-8">
-          <div class="grid md:grid-cols-2 gap-8 p-8">
-            <div class="flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl">
-              <div class="text-center p-8">
-                <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
-                  </svg>
-                </div>
-                <h3 class="text-3xl font-bold text-gray-900">AIFleetControl</h3>
-                <p class="text-sm text-gray-500 mt-2">Fleet Management Platform</p>
+        <a 
+          href="/contact" 
+          class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all duration-300"
+        >
+          <div class="h-48 bg-gradient-to-br from-slate-50 to-blue-50 flex items-center justify-center p-6">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+                </svg>
               </div>
-            </div>
-            <div class="flex flex-col justify-center">
-              <span class="inline-block px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold mb-4 w-fit">Web aplikacija</span>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">AIFleetControl</h3>
-              <p class="text-gray-600 mb-6">
-                Kompleksan fleet management sistem za logističke firme. Aplikacija omogućava upravljanje voznim parkom, praćenje ruta u real-time, izdavanje naloga, statistike i izvještaje, te višejezičnu komunikaciju između dispečera i vozača.
-              </p>
-              <div class="space-y-3 mb-6">
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Real-time GPS tracking vozila</span>
-                </div>
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Automatsko generisanje naloga i ruta</span>
-                </div>
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Dashboard sa statistikama i KPI metrikama</span>
-                </div>
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Višejezična komunikacija (BA/DE/EN)</span>
-                </div>
-              </div>
-              <p class="text-sm text-gray-500 mb-4">
-                <strong>Tech stack:</strong> Next.js, PostgreSQL, Prisma, Tailwind, Mapbox
-              </p>
-              <p class="text-sm text-indigo-600 font-semibold">
-                Demo dostupan na upit — zahtjeva NDA
-              </p>
+              <h3 class="text-lg font-bold text-gray-900">AIFleetControl</h3>
+              <p class="text-xs text-gray-500 mt-1">Fleet Management</p>
             </div>
           </div>
-        </div>
+          <div class="p-5">
+            <span class="inline-block px-2 py-1 bg-indigo-100 text-indigo-600 rounded-md text-xs font-medium mb-3">Web aplikacija</span>
+            <p class="text-sm text-gray-600 mb-3 line-clamp-2">Kompleksan fleet management sistem sa real-time tracking i automatizacijom.</p>
+            <span class="text-xs text-indigo-600 font-semibold group-hover:text-indigo-700 inline-flex items-center">
+              Demo na upit →
+            </span>
+          </div>
+        </a>
         
         <!-- ZipTV Box -->
-        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm mt-8">
-          <div class="grid md:grid-cols-2 gap-8 p-8">
-            <div class="flex items-center justify-center bg-gray-50 rounded-xl p-8">
-              <a 
-                href="https://ziptvbox.com/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block hover:scale-105 transition-transform duration-200"
-              >
-                <img 
-                  src="/ziptvbox-logo.png" 
-                  alt="ZipTV Box" 
-                  class="max-w-full h-auto max-h-48 object-contain cursor-pointer"
-                />
-              </a>
-            </div>
-            <div class="flex flex-col justify-center">
-              <span class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold mb-4 w-fit">Web platforma</span>
-              <a 
-                href="https://ziptvbox.com/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-2xl font-bold text-gray-900 mb-4 hover:text-purple-600 transition-colors"
-              >
-                ZipTV Box
-              </a>
-              <p class="text-gray-600 mb-6">
-                Kompletna IPTV media player platforma koja omogućava streaming live TV kanala, filmova i serija. Moderna web aplikacija sa naprednim features-ima za upravljanje sadržajem, korisnički računi, playlist management i responsive dizajn.
-              </p>
-              <div class="space-y-3 mb-6">
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Live streaming i VOD (Video on Demand)</span>
-                </div>
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Korisnički računi i subscription management</span>
-                </div>
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">M3U playlist support i EPG integracija</span>
-                </div>
-                <div class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-sm text-gray-700">Responsive dizajn za sve uređaje</span>
-                </div>
-              </div>
-              <p class="text-sm text-gray-500 mb-4">
-                <strong>Tech stack:</strong> React, Node.js, Video.js, Tailwind CSS
-              </p>
-              <a 
-                href="https://ziptvbox.com/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center text-sm text-indigo-600 font-semibold hover:text-indigo-700"
-              >
-                Posjetite sajt
-                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
+        <a 
+          href="https://ziptvbox.com/" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-purple-300 transition-all duration-300"
+        >
+          <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
+            <img 
+              src="/ziptvbox-logo.png" 
+              alt="ZipTV Box" 
+              class="max-w-full h-auto max-h-24 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-        </div>
-      </div>
-      
-      <div>
-        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Web stranice</h2>
-        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Landing i business stranice koje smo napravili za naše klijente.
-        </p>
+          <div class="p-5">
+            <span class="inline-block px-2 py-1 bg-purple-100 text-purple-600 rounded-md text-xs font-medium mb-3">Web platforma</span>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">ZipTV Box</h3>
+            <p class="text-sm text-gray-600 mb-3 line-clamp-2">Kompletna IPTV media player platforma za streaming TV kanala i VOD sadržaja.</p>
+            <span class="text-xs text-indigo-600 font-semibold group-hover:text-indigo-700 inline-flex items-center">
+              Posjetite sajt →
+            </span>
+          </div>
+        </a>
         
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-            <div class="grid md:grid-cols-2 gap-8 p-8">
-              <div class="flex items-center justify-center bg-gray-50 rounded-xl p-8">
-                <a 
-                  href="https://regalert.vercel.app/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="block hover:scale-105 transition-transform duration-200"
-                >
-                  <img 
-                    src="/regialert-logo.svg" 
-                    alt="RegiAlert" 
-                    class="max-w-full h-auto max-h-48 object-contain cursor-pointer"
-                  />
-                </a>
-              </div>
-              <div class="flex flex-col justify-center">
-                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4 w-fit">Web aplikacija</span>
-                <a 
-                  href="https://regalert.vercel.app/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-2xl font-bold text-gray-900 mb-4 hover:text-blue-600 transition-colors"
-                >
-                  RegiAlert
-                </a>
-                <p class="text-gray-600 mb-6">
-                  Automatska SMS obavještenja za isteke registracije i zakazane termine. Offline aplikacija za osiguravajuća društva i agente u BiH. Sistem automatski prepoznaje kontakte i datume isteka, omogućava slanje personalizovanih SMS poruka preko Android telefona.
-                </p>
-                <div class="space-y-3 mb-6">
-                  <div class="flex items-start">
-                    <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span class="text-sm text-gray-700">Offline aplikacija – podaci ostaju kod vas</span>
-                  </div>
-                  <div class="flex items-start">
-                    <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span class="text-sm text-gray-700">Automatsko prepoznavanje isteka registracije</span>
-                  </div>
-                  <div class="flex items-start">
-                    <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span class="text-sm text-gray-700">SMS preko vašeg službenog Android telefona</span>
-                  </div>
-                  <div class="flex items-start">
-                    <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span class="text-sm text-gray-700">Personalizovane poruke i zakazivanje termina</span>
-                  </div>
-                </div>
-                <a 
-                  href="https://regalert.vercel.app/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center text-sm text-indigo-600 font-semibold hover:text-indigo-700"
-                >
-                  Posjetite sajt
-                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-            <div class="grid md:grid-cols-2 gap-8 p-8">
-              <div class="flex items-center justify-center bg-gray-50 rounded-xl p-8">
-                <a 
-                  href="https://srtpedja.vercel.app/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="block hover:scale-105 transition-transform duration-200"
-                >
-                  <img 
-                    src="/srt-transport-logo.svg" 
-                    alt="SRT Transport" 
-                    class="max-w-full h-auto max-h-48 object-contain cursor-pointer"
-                  />
-                </a>
-              </div>
-              <div class="flex flex-col justify-center">
-                <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-600 rounded-full text-sm font-semibold mb-4 w-fit">Business sajt</span>
-                <a 
-                  href="https://srtpedja.vercel.app/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-2xl font-bold text-gray-900 mb-4 hover:text-emerald-600 transition-colors"
-                >
-                  SRT Transport
-                </a>
-                <p class="text-gray-600 mb-6">
-                  Pouzdan i siguran prevoz robe i vozila u BiH i Evropi. Business sajt sa prikazom usluga, voznog parka, galerijom radova, kontakt formom i direktnom komunikacijom. Moderna, responsive stranica sa fokusom na pouzdanost i profesionalnost.
-                </p>
-                <div class="space-y-3 mb-6">
-                  <div class="flex items-start">
-                    <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span class="text-sm text-gray-700">Prikaz voznog parka i usluga</span>
-                  </div>
-                  <div class="flex items-start">
-                    <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span class="text-sm text-gray-700">Galerija radova sa terena</span>
-                  </div>
-                  <div class="flex items-start">
-                    <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span class="text-sm text-gray-700">Kontakt forma i direktna komunikacija</span>
-                  </div>
-                  <div class="flex items-start">
-                    <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span class="text-sm text-gray-700">Responsive dizajn za sve uređaje</span>
-                  </div>
-                </div>
-                <a 
-                  href="https://srtpedja.vercel.app/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center text-sm text-indigo-600 font-semibold hover:text-indigo-700"
-                >
-                  Posjetite sajt
-                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
   
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Kako isporučujemo</h2>
+  <!-- Compact Process Section -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Kako radimo</h2>
       
-      <div class="grid md:grid-cols-4 gap-8">
-        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center">
-          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+      <div class="grid md:grid-cols-4 gap-4">
+        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
             1
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">Discovery</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Razgovaramo o vašim potrebama, ciljevima i viziji. Definišemo scope i deliverables.
-          </p>
-          <div class="text-xs text-gray-500">
-            <strong>Output:</strong> Brief dokument
-          </div>
+          <h3 class="text-sm font-semibold text-gray-900 mb-2">Discovery</h3>
+          <p class="text-xs text-gray-600">Analiza potreba i ciljeva</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center">
-          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
             2
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">Demo</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Kreiramo demo verziju (za 24–48h) koja pokazuje dizajn i strukturu.
-          </p>
-          <div class="text-xs text-gray-500">
-            <strong>Output:</strong> Live demo link
-          </div>
+          <h3 class="text-sm font-semibold text-gray-900 mb-2">Demo</h3>
+          <p class="text-xs text-gray-600">Demo za 24–48h</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center">
-          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
             3
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">Iteracija</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Prilagođavamo dizajn, unosite sadržaj, dodajemo feature-e. Testirate i dajete feedback.
-          </p>
-          <div class="text-xs text-gray-500">
-            <strong>Output:</strong> Finalna verzija
-          </div>
+          <h3 class="text-sm font-semibold text-gray-900 mb-2">Iteracija</h3>
+          <p class="text-xs text-gray-600">Prilagođavanje i feedback</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center">
-          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
             4
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">Launch & Support</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Postavljamo sajt live, povezujemo domen, podešavamo analytics. Pružamo podršku.
-          </p>
-          <div class="text-xs text-gray-500">
-            <strong>Output:</strong> Live sajt + docs
-          </div>
+          <h3 class="text-sm font-semibold text-gray-900 mb-2">Launch</h3>
+          <p class="text-xs text-gray-600">Postavljanje i podrška</p>
         </div>
-      </div>
-      
-      <div class="mt-12 bg-indigo-50 border border-indigo-200 rounded-xl p-6 text-center">
-        <p class="text-gray-700">
-          <strong>Prosječno vrijeme:</strong> Landing stranice 3–7 dana • Business sajtovi 1–3 sedmice • Web aplikacije 4–12 sedmica
-        </p>
       </div>
     </div>
   </section>

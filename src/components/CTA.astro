@@ -9,25 +9,29 @@ interface Props {
 const { title, subtitle, description, href } = Astro.props;
 ---
 
-<section class="py-16 bg-indigo-600 text-white">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<section class="py-16 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 gradient-animate text-white relative overflow-hidden">
+  <div class="absolute inset-0 bg-black/10"></div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-on-scroll">
     {subtitle && (
-      <p class="text-indigo-200 font-semibold mb-2 uppercase tracking-wide text-sm">
+      <p class="text-white/90 font-semibold mb-2 uppercase tracking-wide text-sm fade-in">
         {subtitle}
       </p>
     )}
-    <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6 fade-in stagger-1">
       {title}
     </h2>
-    <p class="text-xl text-indigo-100 mb-8">
+    <p class="text-xl text-white/90 mb-8 fade-in stagger-2">
       {description}
     </p>
     {href && (
       <a 
         href={href}
-        class="inline-flex items-center justify-center px-8 py-4 bg-white text-indigo-600 rounded-lg hover:bg-indigo-50 transition-colors font-semibold text-lg"
+        class="inline-flex items-center justify-center px-8 py-4 bg-white text-indigo-600 rounded-xl hover:bg-indigo-50 transition-all duration-300 font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover-lift fade-in stagger-3"
       >
         Kontaktiraj nas
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
       </a>
     )}
   </div>

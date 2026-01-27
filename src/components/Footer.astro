@@ -15,11 +15,11 @@ const footerLinks = {
 };
 ---
 
-<footer class="bg-gray-50 border-t border-gray-200 mt-24">
+<footer class="bg-gradient-to-br from-gray-50 to-indigo-50 border-t border-gray-200 mt-24">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">ZIPTV TECH SOLUTIONS</h3>
+      <div class="animate-on-scroll">
+        <h3 class="text-lg font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-3">ZIPTV TECH SOLUTIONS</h3>
         <p class="text-gray-600 text-sm leading-relaxed mb-2">
           Mileta Milinčić s.p.
         </p>
@@ -28,12 +28,12 @@ const footerLinks = {
         </p>
       </div>
       
-      <div>
+      <div class="animate-on-scroll stagger-1">
         <h3 class="font-semibold text-gray-900 mb-4">Firma</h3>
         <ul class="space-y-2">
           {footerLinks.company.map(link => (
             <li>
-              <a href={link.href} class="text-gray-600 hover:text-indigo-600 transition-colors text-sm">
+              <a href={link.href} class="text-gray-600 hover:text-indigo-600 transition-all duration-300 text-sm inline-block hover:translate-x-1">
                 {link.label}
               </a>
             </li>
@@ -41,12 +41,12 @@ const footerLinks = {
         </ul>
       </div>
       
-      <div>
+      <div class="animate-on-scroll stagger-2">
         <h3 class="font-semibold text-gray-900 mb-4">Legal</h3>
         <ul class="space-y-2">
           {footerLinks.legal.map(link => (
             <li>
-              <a href={link.href} class="text-gray-600 hover:text-indigo-600 transition-colors text-sm">
+              <a href={link.href} class="text-gray-600 hover:text-indigo-600 transition-all duration-300 text-sm inline-block hover:translate-x-1">
                 {link.label}
               </a>
             </li>
@@ -55,7 +55,7 @@ const footerLinks = {
       </div>
     </div>
     
-    <div class="border-t border-gray-200 mt-8 pt-8">
+    <div class="border-t border-gray-200 mt-8 pt-8 animate-on-scroll">
       <div class="text-center mb-3">
         <p class="text-gray-600 text-sm">
           © {currentYear} ZIPTV TECH SOLUTIONS — Mileta Milinčić s.p.

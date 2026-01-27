@@ -20,59 +20,81 @@ import CTA from '../components/CTA.astro';
     secondaryCta={{ text: 'Pogledaj portfolio', href: '/portfolio' }}
   />
   
-  <section class="py-12 bg-gray-50">
+  <!-- Stats Bar with Animation -->
+  <section class="py-8 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 gradient-animate">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-        <div>
-          <p class="text-sm text-gray-600">24–48h demo</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="fade-in stagger-1">
+          <div class="glass rounded-xl p-4 backdrop-blur-md">
+            <p class="text-white font-bold text-lg mb-1">24–48h</p>
+            <p class="text-white/90 text-sm">Demo</p>
+          </div>
         </div>
-        <div>
-          <p class="text-sm text-gray-600">Mobile-first</p>
+        <div class="fade-in stagger-2">
+          <div class="glass rounded-xl p-4 backdrop-blur-md">
+            <p class="text-white font-bold text-lg mb-1">Mobile</p>
+            <p class="text-white/90 text-sm">First</p>
+          </div>
         </div>
-        <div>
-          <p class="text-sm text-gray-600">SEO optimizovano</p>
+        <div class="fade-in stagger-3">
+          <div class="glass rounded-xl p-4 backdrop-blur-md">
+            <p class="text-white font-bold text-lg mb-1">SEO</p>
+            <p class="text-white/90 text-sm">Optimizovano</p>
+          </div>
         </div>
-        <div>
-          <p class="text-sm text-gray-600">Dugoročna podrška</p>
+        <div class="fade-in stagger-4">
+          <div class="glass rounded-xl p-4 backdrop-blur-md">
+            <p class="text-white font-bold text-lg mb-1">Podrška</p>
+            <p class="text-white/90 text-sm">Dugoročna</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
   
-  <section class="py-20">
+  <!-- Services with Animations -->
+  <section class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div class="text-center mb-12 animate-on-scroll">
         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Usluge</h2>
         <p class="text-xl text-gray-600">Od landing stranica do kompleksnih web aplikacija</p>
       </div>
       
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <Card 
-          title="Landing stranice"
-          description="Moderne, brze stranice koje konvertuju. Idealno za start i proizvode."
-          icon="M13 10V3L4 14h7v7l9-11h-7z"
-        />
-        <Card 
-          title="Business sajtovi"
-          description="Kompletni web sajtovi sa više stranica, CMS i custom funkcionalnostima."
-          icon="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-        />
-        <Card 
-          title="Web aplikacije"
-          description="Custom softverska rješenja, portali, dashboardi i automatizacije."
-          icon="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-        />
-        <Card 
-          title="Održavanje & Hosting"
-          description="Pouzdano hostovanje, backup, update i tehnička podrška."
-          icon="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
-        />
+        <div class="animate-on-scroll stagger-1 hover-lift">
+          <Card 
+            title="Landing stranice"
+            description="Moderne, brze stranice koje konvertuju. Idealno za start i proizvode."
+            icon="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </div>
+        <div class="animate-on-scroll stagger-2 hover-lift">
+          <Card 
+            title="Business sajtovi"
+            description="Kompletni web sajtovi sa više stranica, CMS i custom funkcionalnostima."
+            icon="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+          />
+        </div>
+        <div class="animate-on-scroll stagger-3 hover-lift">
+          <Card 
+            title="Web aplikacije"
+            description="Custom softverska rješenja, portali, dashboardi i automatizacije."
+            icon="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+          />
+        </div>
+        <div class="animate-on-scroll stagger-4 hover-lift">
+          <Card 
+            title="Održavanje & Hosting"
+            description="Pouzdano hostovanje, backup, update i tehnička podrška."
+            icon="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+          />
+        </div>
       </div>
       
-      <div class="text-center mt-12">
-        <a href="/services" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold">
+      <div class="text-center mt-10 animate-on-scroll">
+        <a href="/services" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold group">
           Sve usluge detaljno
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </a>
@@ -80,56 +102,57 @@ import CTA from '../components/CTA.astro';
     </div>
   </section>
   
-  <section class="py-20 bg-gray-50">
+  <!-- Process with Animations -->
+  <section class="py-16 bg-gradient-to-br from-gray-50 to-indigo-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div class="text-center mb-12 animate-on-scroll">
         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Kako radimo</h2>
         <p class="text-xl text-gray-600">Jednostavan proces od ideje do živog sajta</p>
       </div>
       
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="text-center">
-          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center animate-on-scroll stagger-1 hover-lift bg-white rounded-xl p-6 border border-gray-200">
+          <div class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg">
             1
           </div>
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Razgovor</h3>
-          <p class="text-gray-600">Pošaljete zahtjev — odgovaramo za par sati sa pitanjima.</p>
+          <p class="text-gray-600 text-sm">Pošaljete zahtjev — odgovaramo za par sati sa pitanjima.</p>
         </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+        <div class="text-center animate-on-scroll stagger-2 hover-lift bg-white rounded-xl p-6 border border-gray-200">
+          <div class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg">
             2
           </div>
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Demo</h3>
-          <p class="text-gray-600">Za 24–48h dobijate demo link (bez obaveze).</p>
+          <p class="text-gray-600 text-sm">Za 24–48h dobijate demo link (bez obaveze).</p>
         </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+        <div class="text-center animate-on-scroll stagger-3 hover-lift bg-white rounded-xl p-6 border border-gray-200">
+          <div class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg">
             3
           </div>
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Finalizacija</h3>
-          <p class="text-gray-600">Unesite izmjene i sadržaj — finalizujemo dizajn.</p>
+          <p class="text-gray-600 text-sm">Unesite izmjene i sadržaj — finalizujemo dizajn.</p>
         </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+        <div class="text-center animate-on-scroll stagger-4 hover-lift bg-white rounded-xl p-6 border border-gray-200">
+          <div class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg">
             4
           </div>
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Launch</h3>
-          <p class="text-gray-600">Sajt ide live + doživotna podrška na upit.</p>
+          <p class="text-gray-600 text-sm">Sajt ide live + doživotna podrška na upit.</p>
         </div>
       </div>
     </div>
   </section>
   
-  <section class="py-20">
+  <!-- Featured Projects with Animations -->
+  <section class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div class="text-center mb-12 animate-on-scroll">
         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Featured projekti</h2>
         <p class="text-xl text-gray-600">Neki od radova koji pokazuju šta možemo</p>
       </div>
       
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Dr KOLAROV Demo -->
-        <a href="https://drkolarov.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-white border-2 border-amber-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group relative">
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="https://drkolarov.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-white border-2 border-amber-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group relative animate-on-scroll stagger-1 hover-lift">
           <div class="absolute top-3 right-3 z-10">
             <span class="inline-block px-2 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-semibold border border-amber-300">
               DEMO
@@ -137,7 +160,7 @@ import CTA from '../components/CTA.astro';
           </div>
           <div class="h-48 bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-6">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-3">
+              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                 <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
@@ -147,14 +170,15 @@ import CTA from '../components/CTA.astro';
           </div>
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-900 mb-2">Dr KOLAROV</h3>
-            <p class="text-gray-600 mb-2">Stomatološka ambulanta u Prnjavoru. Business sajt sa uslugama, galerijom i kontakt formom.</p>
+            <p class="text-gray-600 mb-2 text-sm">Stomatološka ambulanta u Prnjavoru. Business sajt sa uslugama, galerijom i kontakt formom.</p>
             <p class="text-xs text-amber-700 mb-3">Demo verzija • Nepotpuno</p>
-            <span class="text-sm text-indigo-600 font-semibold group-hover:text-indigo-700">Business sajt →</span>
+            <span class="text-sm text-indigo-600 font-semibold group-hover:text-indigo-700 inline-flex items-center">
+              Business sajt →
+            </span>
           </div>
         </a>
         
-        <!-- Dr BASTAŠIĆ Demo -->
-        <a href="https://bastasic.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-white border-2 border-amber-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group relative">
+        <a href="https://bastasic.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-white border-2 border-amber-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group relative animate-on-scroll stagger-2 hover-lift">
           <div class="absolute top-3 right-3 z-10">
             <span class="inline-block px-2 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-semibold border border-amber-300">
               DEMO
@@ -162,7 +186,7 @@ import CTA from '../components/CTA.astro';
           </div>
           <div class="h-48 bg-gradient-to-br from-emerald-50 to-teal-50 flex items-center justify-center p-6">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-3">
+              <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                 <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
@@ -172,48 +196,48 @@ import CTA from '../components/CTA.astro';
           </div>
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-900 mb-2">STOMATOLOGIJA dr BASTAŠIĆ</h3>
-            <p class="text-gray-600 mb-2">Stomatološka ordinacija u Banja Luci. Profesionalna business stranica sa uslugama i timom.</p>
+            <p class="text-gray-600 mb-2 text-sm">Stomatološka ordinacija u Banja Luci. Profesionalna business stranica sa uslugama i timom.</p>
             <p class="text-xs text-amber-700 mb-3">Demo verzija • Nepotpuno</p>
             <span class="text-sm text-indigo-600 font-semibold group-hover:text-indigo-700">Business sajt →</span>
           </div>
         </a>
         
-        <a href="https://regalert.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+        <a href="https://regalert.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group animate-on-scroll stagger-3 hover-lift">
           <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
             <img 
               src="/regialert-logo.svg" 
               alt="RegiAlert" 
-              class="max-w-full h-auto max-h-32 object-contain group-hover:scale-105 transition-transform duration-200"
+              class="max-w-full h-auto max-h-32 object-contain group-hover:scale-110 group-hover:rotate-2 transition-all duration-300"
             />
           </div>
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-900 mb-2">RegiAlert</h3>
-            <p class="text-gray-600 mb-4">Automatska SMS obavještenja za isteke registracije i zakazane termine.</p>
+            <p class="text-gray-600 mb-4 text-sm">Automatska SMS obavještenja za isteke registracije i zakazane termine.</p>
             <span class="text-sm text-indigo-600 font-semibold group-hover:text-indigo-700">Web aplikacija →</span>
           </div>
         </a>
       </div>
       
-      <div class="grid md:grid-cols-3 gap-8 mt-8">
-        <a href="https://srtpedja.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <a href="https://srtpedja.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group animate-on-scroll stagger-4 hover-lift">
           <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
             <img 
               src="/srt-transport-logo.svg" 
               alt="SRT Transport" 
-              class="max-w-full h-auto max-h-32 object-contain group-hover:scale-105 transition-transform duration-200"
+              class="max-w-full h-auto max-h-32 object-contain group-hover:scale-110 group-hover:rotate-2 transition-all duration-300"
             />
           </div>
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-900 mb-2">SRT Transport</h3>
-            <p class="text-gray-600 mb-4">Pouzdan prevoz robe i vozila u BiH i Evropi.</p>
+            <p class="text-gray-600 mb-4 text-sm">Pouzdan prevoz robe i vozila u BiH i Evropi.</p>
             <span class="text-sm text-indigo-600 font-semibold group-hover:text-indigo-700">Business sajt →</span>
           </div>
         </a>
         
-        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 animate-on-scroll stagger-5 hover-lift">
           <div class="h-48 bg-gradient-to-br from-slate-50 to-blue-50 flex items-center justify-center p-6">
             <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-3">
+              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-3">
                 <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
@@ -224,16 +248,16 @@ import CTA from '../components/CTA.astro';
           </div>
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-900 mb-2">AIFleetControl</h3>
-            <p class="text-gray-600 mb-4">Fleet management sistem: rute, nalozi, tracking, statistike, višejezična komunikacija.</p>
+            <p class="text-gray-600 mb-4 text-sm">Fleet management sistem: rute, nalozi, tracking, statistike, višejezična komunikacija.</p>
             <span class="text-sm text-indigo-600 font-semibold">Web aplikacija</span>
           </div>
         </div>
       </div>
       
-      <div class="text-center mt-12">
-        <a href="/portfolio" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold">
+      <div class="text-center mt-10 animate-on-scroll">
+        <a href="/portfolio" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold group">
           Vidi sve projekte
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </a>
@@ -241,78 +265,80 @@ import CTA from '../components/CTA.astro';
     </div>
   </section>
   
-  <section class="py-20 bg-gray-50">
+  <!-- Pricing with Animations -->
+  <section class="py-16 bg-gradient-to-br from-gray-50 to-indigo-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div class="text-center mb-12 animate-on-scroll">
         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Paketi i cijene</h2>
         <p class="text-xl text-gray-600">Transparentne cijene, bez skrivenih troškova</p>
       </div>
       
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover-lift animate-on-scroll stagger-1">
           <h3 class="text-xl font-semibold text-gray-900 mb-2">START</h3>
           <p class="text-3xl font-bold text-gray-900 mb-4">od 194 KM</p>
-          <p class="text-gray-600 mb-6">Landing stranica, idealno za start.</p>
-          <a href="/pricing" class="block text-center text-indigo-600 hover:text-indigo-700 font-semibold">
-            Detaljnije →
+          <p class="text-gray-600 mb-6 text-sm">Landing stranica, idealno za start.</p>
+          <a href="/pricing" class="block text-center text-indigo-600 hover:text-indigo-700 font-semibold group">
+            Detaljnije <span class="inline-block group-hover:translate-x-1 transition-transform">→</span>
           </a>
         </div>
         
-        <div class="bg-indigo-600 text-white border-2 border-indigo-600 rounded-2xl p-6 shadow-md relative">
-          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-emerald-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+        <div class="bg-gradient-to-br from-indigo-600 to-purple-600 text-white border-2 border-indigo-600 rounded-xl p-6 shadow-xl relative hover-lift animate-on-scroll stagger-2 scale-105">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-emerald-500 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
             Najpopularnije
           </div>
           <h3 class="text-xl font-semibold mb-2">PRO</h3>
           <p class="text-3xl font-bold mb-4">od 585 KM</p>
-          <p class="text-indigo-100 mb-6">Business sajt sa više stranica.</p>
-          <a href="/pricing" class="block text-center text-white hover:text-indigo-100 font-semibold">
-            Detaljnije →
+          <p class="text-indigo-100 mb-6 text-sm">Business sajt sa više stranica.</p>
+          <a href="/pricing" class="block text-center text-white hover:text-indigo-100 font-semibold group">
+            Detaljnije <span class="inline-block group-hover:translate-x-1 transition-transform">→</span>
           </a>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover-lift animate-on-scroll stagger-3">
           <h3 class="text-xl font-semibold text-gray-900 mb-2">CUSTOM</h3>
           <p class="text-3xl font-bold text-gray-900 mb-4">Po dogovoru</p>
-          <p class="text-gray-600 mb-6">Web aplikacije i kompleksna rješenja.</p>
-          <a href="/pricing" class="block text-center text-indigo-600 hover:text-indigo-700 font-semibold">
-            Detaljnije →
+          <p class="text-gray-600 mb-6 text-sm">Web aplikacije i kompleksna rješenja.</p>
+          <a href="/pricing" class="block text-center text-indigo-600 hover:text-indigo-700 font-semibold group">
+            Detaljnije <span class="inline-block group-hover:translate-x-1 transition-transform">→</span>
           </a>
         </div>
       </div>
       
-      <p class="text-center text-gray-600 mt-8">
+      <p class="text-center text-gray-600 mt-8 text-sm animate-on-scroll">
         Hosting i održavanje: od 20–50 KM mjesečno
       </p>
     </div>
   </section>
   
-  <section class="py-20">
+  <!-- FAQ with Animations -->
+  <section class="py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div class="text-center mb-12 animate-on-scroll">
         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Često postavljana pitanja</h2>
       </div>
       
-      <div class="space-y-6">
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
+      <div class="space-y-4">
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift animate-on-scroll stagger-1">
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Koliko traje izrada stranice?</h3>
-          <p class="text-gray-600">Landing stranice: 3–7 dana. Business sajtovi: 1–3 sedmice. Web aplikacije: individualno, obično 4–12 sedmica.</p>
+          <p class="text-gray-600 text-sm">Landing stranice: 3–7 dana. Business sajtovi: 1–3 sedmice. Web aplikacije: individualno, obično 4–12 sedmica.</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift animate-on-scroll stagger-2">
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Da li mogu dobiti demo prije plaćanja?</h3>
-          <p class="text-gray-600">Da! Možete zatražiti demo verziju bez obaveze — obično je spremna za 24–48h.</p>
+          <p class="text-gray-600 text-sm">Da! Možete zatražiti demo verziju bez obaveze — obično je spremna za 24–48h.</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift animate-on-scroll stagger-3">
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Šta ako mi treba izmjena poslije lansiranja?</h3>
-          <p class="text-gray-600">Male izmjene i ispravke su uključene. Za veće izmjene dogovaramo novu fazu ili mjesečnu podršku.</p>
+          <p class="text-gray-600 text-sm">Male izmjene i ispravke su uključene. Za veće izmjene dogovaramo novu fazu ili mjesečnu podršku.</p>
         </div>
       </div>
       
-      <div class="text-center mt-12">
-        <a href="/contact" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold">
+      <div class="text-center mt-10 animate-on-scroll">
+        <a href="/contact" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold group">
           Vidi sva pitanja
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </a>

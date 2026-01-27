@@ -11,20 +11,23 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
 >
   <Navbar slot="navbar" />
   
-  <section class="py-20 bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">Hajde da vam napravimo demo</h1>
-      <p class="text-xl text-gray-600">Pošaljite ime firme i djelatnost — dobijate demo link bez obaveze.</p>
+  <!-- Compact Hero -->
+  <section class="py-12 bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 fade-in">Hajde da vam napravimo demo</h1>
+      <p class="text-xl text-gray-600 fade-in stagger-1">Pošaljite ime firme i djelatnost — dobijate demo link bez obaveze.</p>
     </div>
   </section>
   
-  <section class="py-20">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-12">
+  <!-- Contact Section -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8">
         
-        <div>
-          <h2 class="text-2xl font-bold text-gray-900 mb-6">Kontaktirajte nas direktno</h2>
-          <p class="text-gray-600 mb-8">
+        <!-- Direct Contact -->
+        <div class="animate-on-scroll">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Kontaktirajte nas direktno</h2>
+          <p class="text-gray-600 mb-6 text-sm">
             Najbrži način za demo je direktan kontakt. Odgovaramo za par sati.
           </p>
           
@@ -33,30 +36,30 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
               href={getWhatsAppLink()} 
               target="_blank"
               rel="noopener noreferrer"
-              class="flex items-center p-4 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors"
+              class="flex items-center p-5 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-xl hover:from-green-600 hover:to-green-700 transition-all duration-300 hover-lift group"
             >
-              <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <div class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                 </svg>
               </div>
               <div>
-                <div class="font-semibold">WhatsApp</div>
+                <div class="font-semibold text-lg">WhatsApp</div>
                 <div class="text-sm text-green-100">Brza komunikacija</div>
               </div>
             </a>
 
             <a 
               href={`tel:+${CONTACT.phone}`} 
-              class="flex items-center p-4 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 transition-colors"
+              class="flex items-center p-5 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-xl hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 hover-lift group"
             >
-              <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h1.28a1 1 0 01.96.72l1.12 3.9a1 1 0 01-.27 1.02l-1.2 1.2a1 1 0 00-.21 1.09c.6 1.44 1.7 2.54 3.14 3.14a1 1 0 001.09-.21l1.2-1.2a1 1 0 011.02-.27l3.9 1.12a1 1 0 01.72.96V19a2 2 0 01-2 2h-1C9.82 21 3 14.18 3 6V5z" />
                 </svg>
               </div>
               <div>
-                <div class="font-semibold">Poziv</div>
+                <div class="font-semibold text-lg">Poziv</div>
                 <div class="text-sm text-emerald-100">Direktan razgovor: +{CONTACT.phone}</div>
               </div>
             </a>
@@ -65,39 +68,40 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
               href={getViberLink()} 
               target="_blank"
               rel="noopener noreferrer"
-              class="flex items-center p-4 bg-purple-500 text-white rounded-xl hover:bg-purple-600 transition-colors"
+              class="flex items-center p-5 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-xl hover:from-purple-600 hover:to-purple-700 transition-all duration-300 hover-lift group"
             >
-              <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <div class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M23.155 13.893c.716-6.027-.344-9.832-2.256-11.553l.001-.001C18.688.065 15.223-.279 9.935.288 4.677.835 1.474 2.915.548 5.948c-.901 2.948.064 9.375 2.227 12.307l-.009.004.054.09c1.029 1.425 2.905 2.379 5.166 2.603l1.102-.001s1.535-.138 1.742-.828c.205-.68.191-.196.191-.196s-.027-.057-.038-.38c-.011-.323-.114-.949.425-1.199.535-.248 1.265.413 2.021 1.012.571.453 1.007.707 1.621.645l3.246-.012s1.697-.107 1.027-1.438c-.054-.107-.382-1.036-1.965-2.927-1.656-1.978-1.435-1.658.561-5.076 1.216-2.083 1.703-3.354 1.552-3.897-.145-.518-.99-.375-1.481-.271l-3.646.021s-.272-.037-.474.084c-.198.12-.325.395-.325.395s-.581 1.550-1.354 2.865c-1.631 2.776-2.286 2.925-2.555 2.751-.625-.403-.469-1.621-.469-2.484 0-2.698.409-3.824-.797-4.116-.4-.097-.692-.16-1.711-.171-1.307-.013-2.414.005-3.040.310-.416.203-.738.656-.542.681.241.031.790.147 1.081.542.374.509.361 1.651.361 1.651s.214 3.181-.502 3.580c-.492.275-1.167-.286-2.616-2.848-.742-1.293-1.303-2.722-1.303-2.722s-.109-.265-.302-.408c-.237-.175-.566-.231-.566-.231l-3.464.021s-.521.015-.711.241c-.172.202-.014.617-.014.617s2.727 6.384 5.813 9.603c2.832 2.95 6.045 2.754 6.045 2.754h1.458z"/>
                 </svg>
               </div>
               <div>
-                <div class="font-semibold">Viber</div>
+                <div class="font-semibold text-lg">Viber</div>
                 <div class="text-sm text-purple-100">Alternativa za chat</div>
               </div>
             </a>
             
             <a 
               href={getEmailLink()} 
-              class="flex items-center p-4 bg-gray-700 text-white rounded-xl hover:bg-gray-800 transition-colors"
+              class="flex items-center p-5 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-xl hover:from-gray-800 hover:to-gray-900 transition-all duration-300 hover-lift group"
             >
-              <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
               <div>
-                <div class="font-semibold">Email</div>
+                <div class="font-semibold text-lg">Email</div>
                 <div class="text-sm text-gray-300">{CONTACT.email}</div>
               </div>
             </a>
           </div>
         </div>
         
-        <div>
-          <h2 class="text-2xl font-bold text-gray-900 mb-6">Ili pošaljite poruku</h2>
-          <form action={getFormAction()} method="POST" class="space-y-6">
+        <!-- Contact Form -->
+        <div class="animate-on-scroll stagger-1">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Ili pošaljite poruku</h2>
+          <form action={getFormAction()} method="POST" class="space-y-5 bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
             <div>
               <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Ime i prezime *</label>
               <input 
@@ -105,7 +109,7 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
                 id="name" 
                 name="name" 
                 required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
               />
             </div>
             
@@ -116,7 +120,7 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
                 id="company" 
                 name="company" 
                 required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
               />
             </div>
             
@@ -128,7 +132,7 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
                 name="industry" 
                 required
                 placeholder="npr. Auto servis, Transport, IT, Trgovina..."
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
               />
             </div>
             
@@ -139,7 +143,7 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
                 id="contact" 
                 name="contact" 
                 required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
               />
             </div>
             
@@ -150,13 +154,13 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
                 name="message" 
                 rows="4"
                 placeholder="Opišite ukratko šta vam treba..."
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
               ></textarea>
             </div>
             
             <button 
               type="submit"
-              class="w-full bg-indigo-600 text-white px-6 py-4 rounded-lg hover:bg-indigo-700 transition-colors font-semibold text-lg"
+              class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 font-semibold text-lg hover-lift"
             >
               Pošalji upit
             </button>
@@ -171,39 +175,40 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
     </div>
   </section>
   
-  <section class="py-20 bg-gray-50">
+  <!-- FAQ -->
+  <section class="py-12 bg-gradient-to-br from-gray-50 to-indigo-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Često postavljana pitanja</h2>
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center animate-on-scroll">Često postavljana pitanja</h2>
       
-      <div class="space-y-6">
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
+      <div class="space-y-4">
+        <div class="bg-white border border-gray-200 rounded-xl p-5 hover-lift animate-on-scroll stagger-1">
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Koliko traje izrada stranice?</h3>
-          <p class="text-gray-600">Landing stranice: 3–7 dana. Business sajtovi: 1–3 sedmice. Web aplikacije: individualno, obično 4–12 sedmica. Demo dobijate za 24–48h bez obaveze.</p>
+          <p class="text-gray-600 text-sm">Landing stranice: 3–7 dana. Business sajtovi: 1–3 sedmice. Web aplikacije: individualno, obično 4–12 sedmica. Demo dobijate za 24–48h bez obaveze.</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
+        <div class="bg-white border border-gray-200 rounded-xl p-5 hover-lift animate-on-scroll stagger-2">
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Da li mogu dobiti demo prije plaćanja?</h3>
-          <p class="text-gray-600">Da! Možete zatražiti demo verziju bez obaveze — obično je spremna za 24–48h. Demo pokazuje dizajn i strukturu. Ako vam se svidi, nastavljamo dalje.</p>
+          <p class="text-gray-600 text-sm">Da! Možete zatražiti demo verziju bez obaveze — obično je spremna za 24–48h. Demo pokazuje dizajn i strukturu. Ako vam se svidi, nastavljamo dalje.</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
+        <div class="bg-white border border-gray-200 rounded-xl p-5 hover-lift animate-on-scroll stagger-3">
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Šta ako mi treba izmjena poslije lansiranja?</h3>
-          <p class="text-gray-600">Male izmjene i ispravke (bugfix) su uključene u cijenu. Za veće izmjene i nove feature dogovaramo novu fazu ili mjesečnu podršku.</p>
+          <p class="text-gray-600 text-sm">Male izmjene i ispravke (bugfix) su uključene u cijenu. Za veće izmjene i nove feature dogovaramo novu fazu ili mjesečnu podršku.</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
+        <div class="bg-white border border-gray-200 rounded-xl p-5 hover-lift animate-on-scroll stagger-4">
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Da li nudite hosting i održavanje?</h3>
-          <p class="text-gray-600">Da. Hosting, SSL, backup, update i tehnička podrška od 20–50 KM mjesečno (zavisno od obima). Možete koristiti i vlastiti hosting.</p>
+          <p class="text-gray-600 text-sm">Da. Hosting, SSL, backup, update i tehnička podrška od 30–60 KM mjesečno (zavisno od obima). Možete koristiti i vlastiti hosting.</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
+        <div class="bg-white border border-gray-200 rounded-xl p-5 hover-lift animate-on-scroll stagger-5">
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Kako izgleda proces plaćanja?</h3>
-          <p class="text-gray-600">Za START i PRO: 50% avans + 50% po završetku. Za CUSTOM: podijelimo na faze i plaćate po fazama. Prihvatamo bankovni transfer i PayPal.</p>
+          <p class="text-gray-600 text-sm">Za START i PRO: 50% avans + 50% po završetku. Za CUSTOM: podijelimo na faze i plaćate po fazama. Prihvatamo bankovni transfer i PayPal.</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-xl p-6">
+        <div class="bg-white border border-gray-200 rounded-xl p-5 hover-lift animate-on-scroll stagger-6">
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Radite li sa klijentima van BiH?</h3>
-          <p class="text-gray-600">Da! Radimo remote za klijente u BiH, Hrvatskoj, Sloveniji, Austriji, Njemačkoj i ostatku EU. Vremenska zona (CET/CEST) omogućava laku saradnju.</p>
+          <p class="text-gray-600 text-sm">Da! Radimo remote za klijente u BiH, Hrvatskoj, Sloveniji, Austriji, Njemačkoj i ostatku EU. Vremenska zona (CET/CEST) omogućava laku saradnju.</p>
         </div>
       </div>
     </div>
