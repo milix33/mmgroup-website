@@ -6,8 +6,8 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
 ---
 
 <BaseLayout 
-  title="Kontakt — MMGroup" 
-  description="Pošaljite upit ili zatražite demo. Odgovaramo za par sati."
+  title="Kontakt — ZIPTV TECH SOLUTIONS" 
+  description="Pošaljite upit ili nas pozovite direktno. Odgovaramo za par sati."
 >
   <Navbar slot="navbar" />
   
@@ -43,6 +43,21 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
               <div>
                 <div class="font-semibold">WhatsApp</div>
                 <div class="text-sm text-green-100">Brza komunikacija</div>
+              </div>
+            </a>
+
+            <a 
+              href={`tel:+${CONTACT.phone}`} 
+              class="flex items-center p-4 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 transition-colors"
+            >
+              <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h1.28a1 1 0 01.96.72l1.12 3.9a1 1 0 01-.27 1.02l-1.2 1.2a1 1 0 00-.21 1.09c.6 1.44 1.7 2.54 3.14 3.14a1 1 0 001.09-.21l1.2-1.2a1 1 0 011.02-.27l3.9 1.12a1 1 0 01.72.96V19a2 2 0 01-2 2h-1C9.82 21 3 14.18 3 6V5z" />
+                </svg>
+              </div>
+              <div>
+                <div class="font-semibold">Poziv</div>
+                <div class="text-sm text-emerald-100">Direktan razgovor: +{CONTACT.phone}</div>
               </div>
             </a>
             
@@ -178,7 +193,7 @@ import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } f
         
         <div class="bg-white border border-gray-200 rounded-xl p-6">
           <h3 class="text-lg font-semibold text-gray-900 mb-2">Da li nudite hosting i održavanje?</h3>
-          <p class="text-gray-600">Da. Hosting, SSL, backup, update i tehnička podrška od 15–30 € mjesečno (zavisno od obima). Možete koristiti i vlastiti hosting.</p>
+          <p class="text-gray-600">Da. Hosting, SSL, backup, update i tehnička podrška od 30–60 KM mjesečno (zavisno od obima). Možete koristiti i vlastiti hosting.</p>
         </div>
         
         <div class="bg-white border border-gray-200 rounded-xl p-6">
