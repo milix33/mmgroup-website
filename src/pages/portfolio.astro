@@ -12,18 +12,22 @@ import CTA from '../components/CTA.astro';
   <Navbar slot="navbar" />
   
   <!-- Compact Hero -->
-  <section class="py-12 bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="relative py-16 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 gradient-animate overflow-hidden">
+    <div class="absolute inset-0 pattern-dots opacity-20"></div>
+    <div class="absolute top-10 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl float"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-300/20 rounded-full blur-3xl float" style="animation-delay: 2s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="text-center">
-        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">Portfolio</h1>
-        <p class="text-gray-600 max-w-2xl mx-auto">Projekti koji pokazuju naš rad i rezultate</p>
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4 fade-in-up">Portfolio</h1>
+        <p class="text-xl text-white/90 max-w-2xl mx-auto fade-in stagger-1">Projekti koji pokazuju naš rad i rezultate</p>
       </div>
     </div>
   </section>
   
   <!-- Modern Grid Portfolio -->
-  <section class="py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="py-16 relative overflow-hidden">
+    <div class="absolute inset-0 pattern-grid opacity-10"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <!-- Projects Grid -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         
@@ -32,7 +36,7 @@ import CTA from '../components/CTA.astro';
           href="https://drkolarov.vercel.app/" 
           target="_blank"
           rel="noopener noreferrer"
-          class="group bg-white border-2 border-amber-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-amber-300 transition-all duration-300 relative"
+          class="group bg-white/95 backdrop-blur-sm border-2 border-amber-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-amber-300 transition-all duration-300 relative hover-lift card-3d transform-3d animate-on-scroll stagger-1"
         >
           <div class="absolute top-3 right-3 z-10">
             <span class="inline-block px-2 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-semibold border border-amber-300">
@@ -65,7 +69,7 @@ import CTA from '../components/CTA.astro';
           href="https://bastasic.vercel.app/" 
           target="_blank"
           rel="noopener noreferrer"
-          class="group bg-white border-2 border-amber-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-amber-300 transition-all duration-300 relative"
+          class="group bg-white/95 backdrop-blur-sm border-2 border-amber-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-amber-300 transition-all duration-300 relative hover-lift card-3d transform-3d animate-on-scroll stagger-2"
         >
           <div class="absolute top-3 right-3 z-10">
             <span class="inline-block px-2 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-semibold border border-amber-300">
@@ -98,7 +102,7 @@ import CTA from '../components/CTA.astro';
           href="https://regalert.vercel.app/" 
           target="_blank"
           rel="noopener noreferrer"
-          class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all duration-300"
+          class="group bg-white/95 backdrop-blur-sm border border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-indigo-300 transition-all duration-300 hover-lift card-3d transform-3d animate-on-scroll stagger-3"
         >
           <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
             <img 
@@ -122,7 +126,7 @@ import CTA from '../components/CTA.astro';
           href="https://srtpedja.vercel.app/" 
           target="_blank"
           rel="noopener noreferrer"
-          class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-emerald-300 transition-all duration-300"
+          class="group bg-white/95 backdrop-blur-sm border border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-emerald-300 transition-all duration-300 hover-lift card-3d transform-3d animate-on-scroll stagger-4"
         >
           <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
             <img 
@@ -144,7 +148,7 @@ import CTA from '../components/CTA.astro';
         <!-- AIFleetControl -->
         <a 
           href="/contact" 
-          class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all duration-300"
+          class="group bg-white/95 backdrop-blur-sm border border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-indigo-300 transition-all duration-300 hover-lift card-3d transform-3d animate-on-scroll stagger-5"
         >
           <div class="h-48 bg-gradient-to-br from-slate-50 to-blue-50 flex items-center justify-center p-6">
             <div class="text-center">
@@ -172,7 +176,7 @@ import CTA from '../components/CTA.astro';
           href="https://ziptvbox.com/" 
           target="_blank"
           rel="noopener noreferrer"
-          class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-purple-300 transition-all duration-300"
+          class="group bg-white/95 backdrop-blur-sm border border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-purple-300 transition-all duration-300 hover-lift card-3d transform-3d animate-on-scroll stagger-6"
         >
           <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
             <img 
@@ -196,40 +200,43 @@ import CTA from '../components/CTA.astro';
   </section>
   
   <!-- Compact Process Section -->
-  <section class="py-12 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Kako radimo</h2>
+  <section class="py-16 bg-gradient-to-br from-gray-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+    <div class="absolute inset-0 pattern-grid opacity-15"></div>
+    <div class="absolute top-10 left-10 w-64 h-64 bg-indigo-200/30 rounded-full blur-3xl float"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-200/30 rounded-full blur-3xl float" style="animation-delay: 2s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center animate-on-scroll">Kako radimo</h2>
       
-      <div class="grid md:grid-cols-4 gap-4">
-        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 text-center hover-lift card-3d transform-3d animate-on-scroll stagger-1 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-xl pulse glow">
             1
           </div>
-          <h3 class="text-sm font-semibold text-gray-900 mb-2">Discovery</h3>
+          <h3 class="text-base font-semibold text-gray-900 mb-2">Discovery</h3>
           <p class="text-xs text-gray-600">Analiza potreba i ciljeva</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+        <div class="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 text-center hover-lift card-3d transform-3d animate-on-scroll stagger-2 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-emerald-600 to-teal-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-xl pulse glow" style="animation-delay: 0.3s;">
             2
           </div>
-          <h3 class="text-sm font-semibold text-gray-900 mb-2">Demo</h3>
+          <h3 class="text-base font-semibold text-gray-900 mb-2">Demo</h3>
           <p class="text-xs text-gray-600">Demo za 24–48h</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+        <div class="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 text-center hover-lift card-3d transform-3d animate-on-scroll stagger-3 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-xl pulse glow" style="animation-delay: 0.6s;">
             3
           </div>
-          <h3 class="text-sm font-semibold text-gray-900 mb-2">Iteracija</h3>
+          <h3 class="text-base font-semibold text-gray-900 mb-2">Iteracija</h3>
           <p class="text-xs text-gray-600">Prilagođavanje i feedback</p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-xl p-5 text-center hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+        <div class="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 text-center hover-lift card-3d transform-3d animate-on-scroll stagger-4 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-pink-600 to-rose-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-xl pulse glow" style="animation-delay: 0.9s;">
             4
           </div>
-          <h3 class="text-sm font-semibold text-gray-900 mb-2">Launch</h3>
+          <h3 class="text-base font-semibold text-gray-900 mb-2">Launch</h3>
           <p class="text-xs text-gray-600">Postavljanje i podrška</p>
         </div>
       </div>

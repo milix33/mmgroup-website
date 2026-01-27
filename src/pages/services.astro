@@ -12,23 +12,27 @@ import CTA from '../components/CTA.astro';
   <Navbar slot="navbar" />
   
   <!-- Compact Hero -->
-  <section class="py-12 bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 fade-in">Usluge</h1>
-      <p class="text-xl text-gray-600 fade-in stagger-1">Od landing stranica do kompleksnih web aplikacija i dugoročne podrške.</p>
+  <section class="relative py-16 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 gradient-animate overflow-hidden">
+    <div class="absolute inset-0 pattern-dots opacity-20"></div>
+    <div class="absolute top-10 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl float"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-300/20 rounded-full blur-3xl float" style="animation-delay: 2s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4 fade-in-up">Usluge</h1>
+      <p class="text-xl text-white/90 fade-in stagger-1">Od landing stranica do kompleksnih web aplikacija i dugoročne podrške.</p>
     </div>
   </section>
   
   <!-- Services Grid -->
-  <section class="py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="py-16 relative overflow-hidden">
+    <div class="absolute inset-0 pattern-grid opacity-10"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid md:grid-cols-2 gap-6">
         
         <!-- Landing Stranice -->
-        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover-lift animate-on-scroll stagger-1">
+        <div class="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 shadow-lg hover-lift card-3d transform-3d animate-on-scroll stagger-1 hover-glow">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center pulse">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
@@ -71,10 +75,10 @@ import CTA from '../components/CTA.astro';
         </div>
         
         <!-- Business Sajtovi -->
-        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover-lift animate-on-scroll stagger-2">
+        <div class="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 shadow-lg hover-lift card-3d transform-3d animate-on-scroll stagger-2 hover-glow">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center pulse" style="animation-delay: 0.3s;">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
@@ -117,10 +121,10 @@ import CTA from '../components/CTA.astro';
         </div>
         
         <!-- Web Aplikacije -->
-        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover-lift animate-on-scroll stagger-3">
+        <div class="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 shadow-lg hover-lift card-3d transform-3d animate-on-scroll stagger-3 hover-glow">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center pulse" style="animation-delay: 0.6s;">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
               </svg>
             </div>
@@ -163,10 +167,10 @@ import CTA from '../components/CTA.astro';
         </div>
         
         <!-- Održavanje & Hosting -->
-        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover-lift animate-on-scroll stagger-4">
+        <div class="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 shadow-lg hover-lift card-3d transform-3d animate-on-scroll stagger-4 hover-glow">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-14 h-14 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center pulse" style="animation-delay: 0.9s;">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
               </svg>
             </div>

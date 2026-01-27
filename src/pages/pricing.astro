@@ -12,20 +12,24 @@ import CTA from '../components/CTA.astro';
   <Navbar slot="navbar" />
   
   <!-- Compact Hero -->
-  <section class="py-12 bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 fade-in">Paketi i cijene</h1>
-      <p class="text-xl text-gray-600 fade-in stagger-1">Transparentne cijene, bez skrivenih troškova.</p>
+  <section class="relative py-16 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 gradient-animate overflow-hidden">
+    <div class="absolute inset-0 pattern-dots opacity-20"></div>
+    <div class="absolute top-20 left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl float"></div>
+    <div class="absolute bottom-20 right-20 w-80 h-80 bg-purple-300/20 rounded-full blur-3xl float" style="animation-delay: 2s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4 fade-in-up">Paketi i cijene</h1>
+      <p class="text-xl text-white/90 fade-in stagger-1">Transparentne cijene, bez skrivenih troškova.</p>
     </div>
   </section>
   
   <!-- Pricing Cards -->
-  <section class="py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="py-16 relative overflow-hidden -mt-8">
+    <div class="absolute inset-0 pattern-grid opacity-10"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid md:grid-cols-3 gap-6">
         
         <!-- START -->
-        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover-lift animate-on-scroll stagger-1">
+        <div class="bg-white/95 backdrop-blur-sm border border-gray-200 rounded-xl p-6 shadow-xl hover-lift card-3d transform-3d animate-on-scroll stagger-1 hover-glow">
           <h3 class="text-2xl font-bold text-gray-900 mb-2">START</h3>
           <p class="text-4xl font-bold text-gray-900 mb-4">od 194 KM</p>
           <p class="text-gray-600 mb-6 text-sm">Landing stranica, idealno za start i proizvode.</p>
@@ -75,8 +79,8 @@ import CTA from '../components/CTA.astro';
         </div>
         
         <!-- PRO -->
-        <div class="bg-gradient-to-br from-indigo-600 to-purple-600 text-white border-2 border-indigo-600 rounded-xl p-6 shadow-xl relative hover-lift animate-on-scroll stagger-2 scale-105">
-          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-emerald-500 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
+        <div class="bg-gradient-to-br from-indigo-600 to-purple-600 text-white border-2 border-indigo-600 rounded-xl p-6 shadow-2xl relative hover-lift card-3d transform-3d animate-on-scroll stagger-2 scale-105 hover:scale-110 glow">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-emerald-500 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-xl pulse">
             Najpopularnije
           </div>
           <h3 class="text-2xl font-bold mb-2">PRO</h3>
@@ -140,7 +144,7 @@ import CTA from '../components/CTA.astro';
         </div>
         
         <!-- CUSTOM -->
-        <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover-lift animate-on-scroll stagger-3">
+        <div class="bg-white/95 backdrop-blur-sm border border-gray-200 rounded-xl p-6 shadow-xl hover-lift card-3d transform-3d animate-on-scroll stagger-3 hover-glow">
           <h3 class="text-2xl font-bold text-gray-900 mb-2">CUSTOM</h3>
           <p class="text-4xl font-bold text-gray-900 mb-4">Po dogovoru</p>
           <p class="text-gray-600 mb-6 text-sm">Web aplikacije i kompleksna rješenja.</p>
@@ -204,14 +208,17 @@ import CTA from '../components/CTA.astro';
       </div>
       
       <!-- Hosting -->
-      <div class="mt-10 bg-gradient-to-br from-gray-50 to-indigo-50 rounded-xl p-6 text-center animate-on-scroll">
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Hosting i održavanje</h3>
-        <p class="text-lg text-gray-700 mb-2">
-          <strong>Od 20–50 KM mjesečno</strong>
-        </p>
-        <p class="text-gray-600 text-sm max-w-2xl mx-auto">
-          Hosting, SSL, backup, update, monitoring i tehnička podrška. Cijena zavisi od obima sajta i prometa.
-        </p>
+      <div class="mt-10 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 border-2 border-indigo-200 rounded-xl p-8 text-center animate-on-scroll shadow-xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-200/30 rounded-full blur-3xl -mr-32 -mt-32 float"></div>
+        <div class="relative z-10">
+          <h3 class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">Hosting i održavanje</h3>
+          <p class="text-2xl font-bold text-gray-900 mb-3">
+            <strong>Od 20–50 KM mjesečno</strong>
+          </p>
+          <p class="text-gray-600 text-sm max-w-2xl mx-auto">
+            Hosting, SSL, backup, update, monitoring i tehnička podrška. Cijena zavisi od obima sajta i prometa.
+          </p>
+        </div>
       </div>
       
       <div class="mt-8 text-center animate-on-scroll">
@@ -223,12 +230,20 @@ import CTA from '../components/CTA.astro';
   </section>
   
   <!-- Payment Methods -->
-  <section class="py-12 bg-gradient-to-br from-gray-50 to-indigo-50">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center animate-on-scroll">Način plaćanja</h2>
+  <section class="py-16 bg-gradient-to-br from-gray-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+    <div class="absolute inset-0 pattern-grid opacity-15"></div>
+    <div class="absolute top-10 left-10 w-64 h-64 bg-indigo-200/30 rounded-full blur-3xl float"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-200/30 rounded-full blur-3xl float" style="animation-delay: 2s;"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-10 text-center animate-on-scroll">Način plaćanja</h2>
       
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift animate-on-scroll stagger-1">
+        <div class="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 hover-lift card-3d transform-3d animate-on-scroll stagger-1 shadow-lg">
+          <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 pulse">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
           <h3 class="text-lg font-semibold text-gray-900 mb-3">Jednokratna uplata</h3>
           <p class="text-gray-600 mb-3 text-sm">
             50% avans pri početku — 50% po završetku i prije launch-a.
@@ -238,7 +253,12 @@ import CTA from '../components/CTA.astro';
           </p>
         </div>
         
-        <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift animate-on-scroll stagger-2">
+        <div class="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 hover-lift card-3d transform-3d animate-on-scroll stagger-2 shadow-lg">
+          <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mb-4 pulse" style="animation-delay: 0.3s;">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            </svg>
+          </div>
           <h3 class="text-lg font-semibold text-gray-900 mb-3">Fazno (milestones)</h3>
           <p class="text-gray-600 mb-3 text-sm">
             Podijelimo projekat na faze — plaćate po završetku svake faze.
@@ -249,8 +269,8 @@ import CTA from '../components/CTA.astro';
         </div>
       </div>
       
-      <div class="mt-6 bg-indigo-50 border border-indigo-200 rounded-xl p-5 text-center animate-on-scroll">
-        <p class="text-gray-700 text-sm">
+      <div class="mt-8 bg-gradient-to-r from-indigo-50 to-purple-50 border-2 border-indigo-200 rounded-xl p-6 text-center animate-on-scroll shadow-lg">
+        <p class="text-gray-700 text-sm font-semibold">
           <strong>Valuta:</strong> BAM (KM) • <strong>Plaćanje:</strong> Bankovno ili po dogovoru
         </p>
       </div>
