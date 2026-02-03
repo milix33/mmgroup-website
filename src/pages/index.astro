@@ -161,15 +161,12 @@ import CTA from '../components/CTA.astro';
       
       <div class="grid md:grid-cols-3 gap-6">
         <a href="https://www.drpetkovic.com/sr" target="_blank" rel="noopener noreferrer" class="block bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group animate-on-scroll stagger-1 hover-lift">
-          <div class="h-48 bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center p-6">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <h4 class="text-lg font-bold text-gray-900">Dr Petković</h4>
-            </div>
+          <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
+            <img 
+              src="https://www.drpetkovic.com/images/logopng2.png" 
+              alt="Stomatološka ordinacija Dr Petković" 
+              class="max-w-full h-auto max-h-32 object-contain group-hover:scale-110 group-hover:rotate-2 transition-all duration-300"
+            />
           </div>
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-900 mb-2">Stomatološka ordinacija Dr Petković</h3>
@@ -181,15 +178,12 @@ import CTA from '../components/CTA.astro';
         </a>
         
         <a href="https://m2milan.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group animate-on-scroll stagger-2 hover-lift">
-          <div class="h-48 bg-gradient-to-br from-slate-50 to-emerald-50 flex items-center justify-center p-6">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-gradient-to-br from-slate-600 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h4 class="text-lg font-bold text-gray-900">M² Architecture</h4>
-            </div>
+          <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
+            <img 
+              src="https://m2milan.vercel.app/images/logo/logopng.png" 
+              alt="M² Architecture" 
+              class="max-w-full h-auto max-h-32 object-contain group-hover:scale-110 group-hover:rotate-2 transition-all duration-300"
+            />
           </div>
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-900 mb-2">M² Architecture</h3>
@@ -212,9 +206,7 @@ import CTA from '../components/CTA.astro';
             <span class="text-sm text-indigo-600 font-semibold group-hover:text-indigo-700">Web aplikacija →</span>
           </div>
         </a>
-      </div>
-      
-      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        
         <a href="https://srtpedja.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group animate-on-scroll stagger-4 hover-lift">
           <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
             <img 
@@ -248,6 +240,21 @@ import CTA from '../components/CTA.astro';
             <span class="text-sm text-indigo-600 font-semibold">Web aplikacija</span>
           </div>
         </div>
+        
+        <a href="https://ziptvbox.com/" target="_blank" rel="noopener noreferrer" class="block bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group animate-on-scroll stagger-6 hover-lift">
+          <div class="h-48 bg-gray-50 flex items-center justify-center p-6">
+            <img 
+              src="/ziptvbox-logo.png" 
+              alt="ZipTV Box" 
+              class="max-w-full h-auto max-h-32 object-contain group-hover:scale-110 group-hover:rotate-2 transition-all duration-300"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">ZipTV Box</h3>
+            <p class="text-gray-600 mb-4 text-sm">IPTV media player platforma za streaming TV kanala i VOD sadržaja.</p>
+            <span class="text-sm text-indigo-600 font-semibold group-hover:text-indigo-700">Web platforma →</span>
+          </div>
+        </a>
       </div>
       
       <div class="text-center mt-10 animate-on-scroll">
