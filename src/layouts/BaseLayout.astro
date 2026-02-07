@@ -6,9 +6,12 @@ interface Props {
   lang?: 'sr' | 'de' | 'en';
 }
 
-const { title, description, image = '/og-image.png', lang = 'sr' } = Astro.props;
+const { title, description, image = '/logo.png', lang = 'sr' } = Astro.props;
 const currentYear = new Date().getFullYear();
 const htmlLang = lang === 'sr' ? 'sr-Latn' : lang === 'de' ? 'de' : 'en';
+// Apsolutni URL slike za dijeljenje (OG/Twitter zahtijevaju puni URL)
+const baseUrl = import.meta.env.SITE || '';
+const absoluteImage = image.startsWith('http') ? image : `${baseUrl}${image}`;
 ---
 
 <!doctype html>
@@ -16,21 +19,25 @@ const htmlLang = lang === 'sr' ? 'sr-Latn' : lang === 'de' ? 'de' : 'en';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <!-- Favicon – logo u tabu browsera -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
     <meta name="generator" content={Astro.generator} />
     
     <title>{title}</title>
     <meta name="description" content={description} />
     
+    <!-- Open Graph / dijeljenje linka (Facebook, LinkedIn, WhatsApp itd.) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={absoluteImage} />
     
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image" content={absoluteImage} />
   </head>
   <body class="antialiased bg-slate-50 text-slate-900">
     <slot name="navbar" />
