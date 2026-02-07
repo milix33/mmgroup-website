@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import Hero from '../../components/Hero.astro';
 import Card from '../../components/Card.astro';
 import CTA from '../../components/CTA.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
 import { translations } from '../../i18n/translations';
 
 export function getStaticPaths() {
@@ -71,10 +72,7 @@ const base = `/${lang}`;
       <div class="relative overflow-hidden bg-white rounded-3xl shadow-xl border border-slate-200/80">
         <div class="absolute top-20 left-0 w-72 h-72 bg-indigo-200/20 rounded-full blur-3xl -ml-36 -mt-36 float"></div>
         <div class="relative z-10 px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-          <div class="text-center mb-12 animate-on-scroll">
-            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{home.servicesTitle}</h2>
-            <p class="text-xl text-slate-600">{home.servicesSubtitle}</p>
-          </div>
+          <SectionHeader title={home.servicesTitle} subtitle={home.servicesSubtitle} class="mb-12 animate-on-scroll" />
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="animate-on-scroll stagger-1 hover-lift">
               <Card title={home.cardLanding} description={home.cardLandingDesc} icon="M13 10V3L4 14h7v7l9-11h-7z" href={`${base}/services`} />
@@ -103,10 +101,7 @@ const base = `/${lang}`;
   <section class="py-16 bg-slate-800 relative overflow-hidden">
     <div class="absolute inset-0 pattern-grid opacity-10"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="text-center mb-12 animate-on-scroll">
-        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">{home.processTitle}</h2>
-        <p class="text-xl text-slate-300">{home.processSubtitle}</p>
-      </div>
+      <SectionHeader title={home.processTitle} subtitle={home.processSubtitle} light class="mb-12 animate-on-scroll" />
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="text-center animate-on-scroll stagger-1 hover-lift card-3d transform-3d bg-slate-700/50 backdrop-blur rounded-xl p-6 border border-slate-600 shadow-lg">
           <div class="w-20 h-20 bg-gradient-to-br from-indigo-600 to-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-xl pulse glow">1</div>
@@ -140,10 +135,7 @@ const base = `/${lang}`;
   
   <section class="py-16 relative overflow-hidden bg-amber-50/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="text-center mb-12 animate-on-scroll">
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{home.featuredTitle}</h2>
-        <p class="text-xl text-slate-600">{home.featuredSubtitle}</p>
-      </div>
+      <SectionHeader title={home.featuredTitle} subtitle={home.featuredSubtitle} class="mb-12 animate-on-scroll" />
       <div class="grid md:grid-cols-3 gap-6">
         <a href="https://www.drpetkovic.com/sr" target="_blank" rel="noopener noreferrer" class="block bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group animate-on-scroll stagger-1 hover-lift">
           <div class="h-48 bg-slate-50 flex items-center justify-center p-6"><img src="https://www.drpetkovic.com/images/logopng2.png" alt="Dr Petković" class="max-w-full h-auto max-h-32 object-contain" /></div>
@@ -182,10 +174,7 @@ const base = `/${lang}`;
   <section class="py-16 bg-slate-100 relative overflow-hidden">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-white rounded-3xl shadow-xl border border-slate-200/80 p-6 sm:p-8 lg:p-10 relative z-10">
-        <div class="text-center mb-12 animate-on-scroll">
-          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{home.pricingTitle}</h2>
-          <p class="text-xl text-slate-600">{home.pricingSubtitle}</p>
-        </div>
+        <SectionHeader title={home.pricingTitle} subtitle={home.pricingSubtitle} class="mb-12 animate-on-scroll" />
         <div class="grid md:grid-cols-3 gap-6">
           <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-lg hover-lift animate-on-scroll stagger-1">
             <h3 class="text-xl font-semibold text-slate-900 mb-2">START</h3>
@@ -214,9 +203,7 @@ const base = `/${lang}`;
   
   <section class="py-16 relative overflow-hidden bg-slate-100">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="text-center mb-12 animate-on-scroll">
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{home.faqTitle}</h2>
-      </div>
+      <SectionHeader title={home.faqTitle} class="mb-12 animate-on-scroll" />
       <div class="space-y-4">
         <div class="bg-white/90 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover-lift animate-on-scroll stagger-1 shadow-lg">
           <h3 class="text-lg font-semibold text-slate-900 mb-2">{home.faq1q}</h3>
