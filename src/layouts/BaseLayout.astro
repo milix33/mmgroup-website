@@ -3,14 +3,16 @@ interface Props {
   title: string;
   description: string;
   image?: string;
+  lang?: 'sr' | 'de' | 'en';
 }
 
-const { title, description, image = '/og-image.png' } = Astro.props;
+const { title, description, image = '/og-image.png', lang = 'sr' } = Astro.props;
 const currentYear = new Date().getFullYear();
+const htmlLang = lang === 'sr' ? 'sr-Latn' : lang === 'de' ? 'de' : 'en';
 ---
 
 <!doctype html>
-<html lang="sr-Latn">
+<html lang={htmlLang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

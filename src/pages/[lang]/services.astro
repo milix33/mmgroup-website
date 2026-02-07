@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import CTA from '../../components/CTA.astro';
+import { translations } from '../../i18n/translations';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'sr' } },
+    { params: { lang: 'de' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const { lang } = Astro.params as { lang: 'sr' | 'de' | 'en' };
+const t = translations[lang].services;
+const base = `/${lang}`;
+---
+
+<BaseLayout
+  title={`${t.title} — ZIPTV TECH SOLUTIONS`}
+  description={t.subtitle}
+  lang={lang}
+>
+  <Navbar slot="navbar" lang={lang} currentPath="services" />
+  
+  <section class="relative py-16 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 gradient-animate overflow-hidden">
+    <div class="absolute inset-0 pattern-dots opacity-20"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4 fade-in-up">{t.title}</h1>
+      <p class="text-xl text-white/90 fade-in stagger-1">{t.subtitle}</p>
+    </div>
+  </section>
+  
+  <section class="py-16 relative overflow-hidden">
+    <div class="absolute inset-0 pattern-grid opacity-10"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white/90 backdrop-blur-sm border border-slate-200 rounded-xl p-6 shadow-lg hover-lift animate-on-scroll stagger-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center pulse">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">{t.landingTitle}</h2>
+              <p class="text-indigo-600 font-semibold text-sm">{t.landingPackage}</p>
+            </div>
+          </div>
+          <ul class="space-y-2 mb-4">
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.landingF1}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.landingF2}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.landingF3}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.landingF4}</span></li>
+          </ul>
+          <div class="bg-slate-50 rounded-lg p-3 mb-4"><p class="text-xs text-slate-600"><strong>{t.landingDeadline}</strong></p></div>
+        </div>
+        
+        <div class="bg-white/90 backdrop-blur-sm border border-slate-200 rounded-xl p-6 shadow-lg hover-lift animate-on-scroll stagger-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center pulse">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">{t.businessTitle}</h2>
+              <p class="text-indigo-600 font-semibold text-sm">{t.businessPackage}</p>
+            </div>
+          </div>
+          <ul class="space-y-2 mb-4">
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.businessF1}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.businessF2}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.businessF3}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.businessF4}</span></li>
+          </ul>
+          <div class="bg-slate-50 rounded-lg p-3 mb-4"><p class="text-xs text-slate-600"><strong>{t.businessDeadline}</strong></p></div>
+        </div>
+        
+        <div class="bg-white/90 backdrop-blur-sm border border-slate-200 rounded-xl p-6 shadow-lg hover-lift animate-on-scroll stagger-3">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center pulse">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" /></svg>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">{t.webappTitle}</h2>
+              <p class="text-indigo-600 font-semibold text-sm">{t.webappPackage}</p>
+            </div>
+          </div>
+          <ul class="space-y-2 mb-4">
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.webappF1}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.webappF2}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.webappF3}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.webappF4}</span></li>
+          </ul>
+          <div class="bg-slate-50 rounded-lg p-3 mb-4"><p class="text-xs text-slate-600"><strong>{t.webappDeadline}</strong></p></div>
+        </div>
+        
+        <div class="bg-white/90 backdrop-blur-sm border border-slate-200 rounded-xl p-6 shadow-lg hover-lift animate-on-scroll stagger-4">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-14 h-14 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center pulse">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">{t.hostingTitle}</h2>
+              <p class="text-indigo-600 font-semibold text-sm">{t.hostingPackage}</p>
+            </div>
+          </div>
+          <ul class="space-y-2 mb-4">
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.hostingF1}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.hostingF2}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.hostingF3}</span></li>
+            <li class="flex items-start text-sm"><svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span class="text-slate-700">{t.hostingF4}</span></li>
+          </ul>
+          <div class="bg-slate-50 rounded-lg p-3 mb-4"><p class="text-xs text-slate-600"><strong>{t.hostingPrice}</strong></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <CTA title={t.ctaTitle} description={t.ctaDesc} href={`${base}/contact`} buttonText={translations[lang].nav.requestQuote} />
+  
+  <Footer slot="footer" lang={lang} />
+</BaseLayout>

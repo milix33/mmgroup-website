@@ -1,19 +1,25 @@
 ---
-const currentYear = new Date().getFullYear();
+import { translations } from '../i18n/translations';
 
-const footerLinks = {
-  company: [
-    { href: '/services', label: 'Usluge' },
-    { href: '/portfolio', label: 'Portfolio' },
-    { href: '/prevodi', label: 'Prevodi (KM / EUR)' },
-    { href: '/about', label: 'O nama' },
-    { href: '/contact', label: 'Kontakt' },
-  ],
-  legal: [
-    { href: '/privacy', label: 'Politika privatnosti' },
-    { href: '/terms', label: 'Uslovi korišćenja' },
-  ],
-};
+interface Props {
+  lang?: 'sr' | 'de' | 'en';
+}
+
+const { lang = 'sr' } = Astro.props;
+const currentYear = new Date().getFullYear();
+const t = translations[lang].footer;
+const base = lang ? `/${lang}` : '';
+const companyLinks = [
+  { path: 'services', label: translations[lang].nav.services },
+  { path: 'portfolio', label: translations[lang].nav.portfolio },
+  { path: 'pricing', label: translations[lang].nav.pricing },
+  { path: 'about', label: translations[lang].nav.about },
+  { path: 'contact', label: translations[lang].nav.contact },
+];
+const legalLinks = [
+  { href: '/privacy', label: lang === 'sr' ? 'Politika privatnosti' : lang === 'de' ? 'Datenschutz' : 'Privacy policy' },
+  { href: '/terms', label: lang === 'sr' ? 'Uslovi korišćenja' : lang === 'de' ? 'Nutzungsbedingungen' : 'Terms of use' },
+];
 ---
 
 <footer class="bg-slate-900 text-slate-300 border-t border-slate-700 mt-24">
@@ -25,16 +31,16 @@ const footerLinks = {
           Mileta Milinčić s.p.
         </p>
         <p class="text-slate-400 text-sm leading-relaxed">
-          Lokalne firme i EU klijenti, fokus na jasnu komunikaciju, brz rad i pouzdanu podršku.
+          {t.tagline}
         </p>
       </div>
       
       <div class="animate-on-scroll stagger-1">
-        <h3 class="font-semibold text-white mb-4">Firma</h3>
+        <h3 class="font-semibold text-white mb-4">{t.company}</h3>
         <ul class="space-y-2">
-          {footerLinks.company.map(link => (
+          {companyLinks.map((link) => (
             <li>
-              <a href={link.href} class="text-slate-400 hover:text-indigo-400 transition-all duration-300 text-sm inline-block hover:translate-x-1">
+              <a href={`${base}/${link.path}`} class="text-slate-400 hover:text-indigo-400 transition-all duration-300 text-sm inline-block hover:translate-x-1">
                 {link.label}
               </a>
             </li>
@@ -43,9 +49,9 @@ const footerLinks = {
       </div>
       
       <div class="animate-on-scroll stagger-2">
-        <h3 class="font-semibold text-white mb-4">Legal</h3>
+        <h3 class="font-semibold text-white mb-4">{t.legal}</h3>
         <ul class="space-y-2">
-          {footerLinks.legal.map(link => (
+          {legalLinks.map((link) => (
             <li>
               <a href={link.href} class="text-slate-400 hover:text-indigo-400 transition-all duration-300 text-sm inline-block hover:translate-x-1">
                 {link.label}
@@ -63,9 +69,9 @@ const footerLinks = {
         </p>
       </div>
       <div class="text-center text-slate-500 text-xs space-y-1">
-        <p>Adresa: Šibovska bb, 78430, Prnjavor, BiH</p>
+        <p>{t.address}</p>
         <p>JIB: 4513996090002</p>
-        <p class="mt-2">Web dizajn &amp; razvoj: ZIPTV TECH SOLUTIONS</p>
+        <p class="mt-2">{t.copyright}</p>
       </div>
     </div>
   </div>
