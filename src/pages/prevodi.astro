@@ -1,0 +1,174 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import CTA from '../components/CTA.astro';
+
+// Cijene: KM za srpsko tržište, EUR za njemačko (≈ 1 EUR = 1,95 KM)
+const packagesSR = [
+  { name: 'START', price: '194 KM', desc: 'Landing stranica, idealno za start i proizvode.', features: ['1 stranica (landing)', 'Mobile-first', 'SEO osnove', 'Kontakt forma', 'Rok: 3–7 dana'] },
+  { name: 'PRO', price: '585 KM', desc: 'Business sajt sa više stranica i CMS-om.', popular: true, features: ['Do 8 stranica', 'CMS opciono', 'Blog / novosti', 'Napredna SEO', '1 mjesec podrške', 'Rok: 1–3 sedmice'] },
+  { name: 'CUSTOM', price: 'Po dogovoru', desc: 'Web aplikacije i kompleksna rješenja.', features: ['Custom backend', 'Admin dashboard', 'API integracije', 'Rok: 4–12 sedmica'] },
+];
+
+const packagesDE = [
+  { name: 'START', price: '99 €', desc: 'Landingpage, ideal für den Einstieg.', features: ['1 Seite (Landing)', 'Mobile-first', 'SEO-Grundlagen', 'Kontaktformular', 'Frist: 3–7 Tage'] },
+  { name: 'PRO', price: '299 €', desc: 'Business-Webseite mit mehreren Seiten und CMS.', popular: true, features: ['Bis 8 Seiten', 'CMS optional', 'Blog / News', 'Erweitertes SEO', '1 Monat Support', 'Frist: 1–3 Wochen'] },
+  { name: 'CUSTOM', price: 'Auf Anfrage', desc: 'Webanwendungen und komplexe Lösungen.', features: ['Individuelles Backend', 'Admin-Dashboard', 'API-Anbindung', 'Frist: 4–12 Wochen'] },
+];
+
+const hostingSR = 'Od 20–50 KM mjesečno';
+const hostingDE = 'Ab 10–26 € monatlich';
+---
+
+<BaseLayout
+  title="Prevodi i cijene — Srpski (KM) | Deutsch (EUR) — ZIPTV TECH SOLUTIONS"
+  description="Cijene u KM za BiH/Srbiju i u EUR za njemačko tržište. Web sajtovi na srpskom, njemačkom i engleskom."
+>
+  <Navbar slot="navbar" />
+
+  <!-- Hero: tamna, živopisna -->
+  <section class="relative py-20 overflow-hidden bg-slate-900">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(99,102,241,0.25),transparent)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_80%_50%,rgba(168,85,247,0.15),transparent)]"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center">
+        <p class="text-indigo-300 font-semibold uppercase tracking-widest text-sm mb-4 fade-in">Cijene po tržištu</p>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 fade-in-up">
+          Prevodi i cijene
+        </h1>
+        <p class="text-xl text-slate-300 max-w-2xl mx-auto fade-in stagger-1">
+          KM za BiH i region • Euro za njemačko i EU tržište. Isti kvalitet, transparentne cijene.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabovi / jezični blokovi -->
+  <section class="py-16 relative bg-gradient-to-b from-slate-100 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Srpski / KM -->
+      <div class="mb-20 animate-on-scroll">
+        <div class="flex flex-wrap items-center gap-3 mb-10">
+          <span class="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold bg-amber-500/20 text-amber-800 border border-amber-400/50">
+            🇧🇦 Srpski / BiH &amp; region
+          </span>
+          <span class="text-2xl font-bold text-slate-800">Cijene u <strong class="text-amber-600">KM</strong></span>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          {packagesSR.map((pkg, i) => (
+            <div
+              class={`rounded-2xl p-6 border-2 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 animate-on-scroll stagger-${i + 1} ${
+                pkg.popular
+                  ? 'bg-gradient-to-br from-indigo-600 to-purple-600 text-white border-indigo-500 shadow-xl scale-[1.02]'
+                  : 'bg-white border-slate-200 shadow-lg'
+              }`}
+            >
+              {pkg.popular && (
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-400 text-slate-900 mb-4">
+                  Najpopularnije
+                </span>
+              )}
+              <h3 class={`text-2xl font-bold mb-2 ${pkg.popular ? 'text-white' : 'text-slate-900'}`}>{pkg.name}</h3>
+              <p class={`text-3xl font-bold mb-2 ${pkg.popular ? 'text-white' : 'text-amber-600'}`}>{pkg.price}</p>
+              <p class={`text-sm mb-6 ${pkg.popular ? 'text-indigo-100' : 'text-slate-600'}`}>{pkg.desc}</p>
+              <ul class="space-y-2 mb-6">
+                {pkg.features.map((f) => (
+                  <li class="flex items-center gap-2 text-sm">
+                    <span class={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${pkg.popular ? 'bg-white/20' : 'bg-emerald-100'}`}>
+                      <svg class={`w-3 h-3 ${pkg.popular ? 'text-emerald-300' : 'text-emerald-600'}`} fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    </span>
+                    <span class={pkg.popular ? 'text-white' : 'text-slate-700'}>{f}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="/contact"
+                class={`block w-full text-center py-3 rounded-xl font-semibold transition-all ${
+                  pkg.popular
+                    ? 'bg-white text-indigo-600 hover:bg-indigo-50'
+                    : 'bg-slate-900 text-white hover:bg-slate-800'
+                }`}
+              >
+                Zatraži ponudu
+              </a>
+            </div>
+          ))}
+        </div>
+        <p class="text-center text-slate-600 mt-6 text-sm">
+          Hosting i održavanje: <strong>{hostingSR}</strong>
+        </p>
+      </div>
+
+      <!-- Njemački / EUR -->
+      <div class="animate-on-scroll">
+        <div class="flex flex-wrap items-center gap-3 mb-10">
+          <span class="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold bg-emerald-500/20 text-emerald-800 border border-emerald-400/50">
+            🇩🇪 Deutsch / EU
+          </span>
+          <span class="text-2xl font-bold text-slate-800">Preise in <strong class="text-emerald-600">EUR</strong></span>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          {packagesDE.map((pkg, i) => (
+            <div
+              class={`rounded-2xl p-6 border-2 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 animate-on-scroll stagger-${i + 1} ${
+                pkg.popular
+                  ? 'bg-gradient-to-br from-emerald-600 to-teal-600 text-white border-emerald-500 shadow-xl scale-[1.02]'
+                  : 'bg-white border-slate-200 shadow-lg'
+              }`}
+            >
+              {pkg.popular && (
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-amber-300 text-slate-900 mb-4">
+                  Beliebt
+                </span>
+              )}
+              <h3 class={`text-2xl font-bold mb-2 ${pkg.popular ? 'text-white' : 'text-slate-900'}`}>{pkg.name}</h3>
+              <p class={`text-3xl font-bold mb-2 ${pkg.popular ? 'text-white' : 'text-emerald-600'}`}>{pkg.price}</p>
+              <p class={`text-sm mb-6 ${pkg.popular ? 'text-emerald-100' : 'text-slate-600'}`}>{pkg.desc}</p>
+              <ul class="space-y-2 mb-6">
+                {pkg.features.map((f) => (
+                  <li class="flex items-center gap-2 text-sm">
+                    <span class={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${pkg.popular ? 'bg-white/20' : 'bg-emerald-100'}`}>
+                      <svg class={`w-3 h-3 ${pkg.popular ? 'text-emerald-300' : 'text-emerald-600'}`} fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    </span>
+                    <span class={pkg.popular ? 'text-white' : 'text-slate-700'}>{f}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="/contact"
+                class={`block w-full text-center py-3 rounded-xl font-semibold transition-all ${
+                  pkg.popular
+                    ? 'bg-white text-emerald-600 hover:bg-emerald-50'
+                    : 'bg-slate-900 text-white hover:bg-slate-800'
+                }`}
+              >
+                Angebot anfragen
+              </a>
+            </div>
+          ))}
+        </div>
+        <p class="text-center text-slate-600 mt-6 text-sm">
+          Hosting &amp; Wartung: <strong>{hostingDE}</strong>
+        </p>
+      </div>
+
+      <!-- Engleski napomena -->
+      <div class="mt-16 p-6 rounded-2xl bg-slate-800 text-slate-200 animate-on-scroll">
+        <h3 class="text-lg font-bold text-white mb-2">🇬🇧 English-speaking clients</h3>
+        <p class="text-sm">
+          We work with clients across the EU. Pricing for projects in English is quoted in <strong class="text-emerald-400">EUR</strong>, same as for the German market. Contact us for a custom quote.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <CTA
+    title="Zatraži ponudu / Angebot anfragen"
+    description="Napišite nam za koji jezik i paket ste zainteresovani — odgovaramo brzo."
+    href="/contact"
+  />
+
+  <Footer slot="footer" />
+</BaseLayout>

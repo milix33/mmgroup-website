@@ -3,18 +3,19 @@ const navLinks = [
   { href: '/', label: 'Početna' },
   { href: '/services', label: 'Usluge' },
   { href: '/portfolio', label: 'Portfolio' },
+  { href: '/prevodi', label: 'Prevodi (KM / EUR)' },
   { href: '/about', label: 'O nama' },
   { href: '/contact', label: 'Kontakt' },
 ];
 
 ---
 
-<nav class="bg-white/95 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+<nav class="bg-slate-900/95 backdrop-blur-md border-b border-slate-700 sticky top-0 z-50 shadow-lg shadow-slate-900/10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <div class="flex-shrink-0">
         <a href="/" class="flex items-center group">
-          <span class="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent group-hover:from-indigo-700 group-hover:to-purple-700 transition-all duration-300">
+          <span class="text-xl font-bold text-white group-hover:text-indigo-300 transition-all duration-300">
             ZIPTV TECH SOLUTIONS
           </span>
         </a>
@@ -24,15 +25,15 @@ const navLinks = [
         {navLinks.map(link => (
           <a 
             href={link.href} 
-            class="text-gray-700 hover:text-indigo-600 transition-all duration-300 font-medium relative group"
+            class="text-slate-300 hover:text-white transition-all duration-300 font-medium relative group"
           >
             {link.label}
-            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"></span>
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-400 group-hover:w-full transition-all duration-300"></span>
           </a>
         ))}
         <a 
           href="/contact" 
-          class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 font-medium shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          class="bg-indigo-500 text-white px-6 py-2 rounded-lg hover:bg-indigo-400 transition-all duration-300 font-medium shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
         >
           Zatraži ponudu
         </a>
@@ -42,7 +43,7 @@ const navLinks = [
         <button 
           id="mobile-menu-btn" 
           type="button" 
-          class="text-gray-700 hover:text-indigo-600 focus:outline-none transition-colors"
+          class="text-slate-300 hover:text-white focus:outline-none transition-colors"
           aria-label="Toggle menu"
         >
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -53,19 +54,19 @@ const navLinks = [
     </div>
   </div>
   
-  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white/95 backdrop-blur-md">
+  <div id="mobile-menu" class="hidden md:hidden border-t border-slate-700 bg-slate-800 backdrop-blur-md">
     <div class="px-4 py-3 space-y-3">
       {navLinks.map(link => (
         <a 
           href={link.href} 
-          class="block text-gray-700 hover:text-indigo-600 transition-colors font-medium py-2"
+          class="block text-slate-300 hover:text-white transition-colors font-medium py-2"
         >
           {link.label}
         </a>
       ))}
       <a 
         href="/contact" 
-        class="block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 font-medium text-center"
+        class="block bg-indigo-500 text-white px-6 py-3 rounded-lg hover:bg-indigo-400 transition-all duration-300 font-medium text-center"
       >
         Zatraži ponudu
       </a>
