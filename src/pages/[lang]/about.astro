@@ -19,12 +19,13 @@ const base = `/${lang}`;
 ---
 
 <BaseLayout
-  title={`${t.title} — ZIPTV TECH SOLUTIONS`}
+  title={`${t.title} — MMGroup`}
   description={t.subtitle}
   lang={lang}
 >
   <Navbar slot="navbar" lang={lang} currentPath="about" />
   
+  <!-- Hero -->
   <section class="relative py-16 sm:py-20 overflow-hidden bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 gradient-animate">
     <div class="absolute inset-0 pattern-dots opacity-20"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -33,82 +34,106 @@ const base = `/${lang}`;
     </div>
   </section>
   
-  <section class="py-16 -mt-8 relative z-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="bg-white border border-slate-200 rounded-xl p-6 text-center shadow-lg hover-lift animate-on-scroll stagger-1">
-          <div class="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">24–48h</div>
-          <p class="text-slate-600 text-sm">{t.demo}</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-6 text-center shadow-lg hover-lift animate-on-scroll stagger-2">
-          <div class="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">3–7</div>
-          <p class="text-slate-600 text-sm">{t.daysLanding}</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-6 text-center shadow-lg hover-lift animate-on-scroll stagger-3">
-          <div class="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">100%</div>
-          <p class="text-slate-600 text-sm">{t.mobile}</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-6 text-center shadow-lg hover-lift animate-on-scroll stagger-4">
-          <div class="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">EU</div>
-          <p class="text-slate-600 text-sm">{t.eu}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
+  <!-- 1. Uvod -->
   <section class="py-16 relative">
+    <div class="absolute inset-0 pattern-grid opacity-30"></div>
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-8 text-center animate-on-scroll">
+        {t.introHeading}
+      </h2>
       <div class="bg-white/80 backdrop-blur-sm border border-slate-200 rounded-2xl p-8 shadow-xl animate-on-scroll">
         <div class="prose prose-lg max-w-none">
           <p class="text-lg text-slate-700 leading-relaxed mb-6">{t.intro1}</p>
-          <p class="text-lg text-slate-700 leading-relaxed mb-6">{t.intro2}</p>
-          <p class="text-lg text-slate-700 leading-relaxed">{t.intro3}</p>
+          <p class="text-lg text-slate-700 leading-relaxed">{t.intro2}</p>
         </div>
       </div>
     </div>
   </section>
   
+  <!-- 2. Osnivači -->
   <section class="py-16 bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-12 text-center animate-on-scroll">{t.valuesTitle}</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white border border-slate-200 rounded-xl p-6 hover-lift card-3d animate-on-scroll stagger-1">
-          <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 pulse">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.value1Title}</h3>
-          <p class="text-slate-600 text-sm">{t.value1Desc}</p>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-12 text-center animate-on-scroll">
+        {t.foundersTitle}
+      </h2>
+      
+      <div class="flex flex-col md:flex-row gap-8 items-start mb-16 animate-on-scroll">
+        <div class="flex-shrink-0 w-full md:w-64">
+          <img 
+            src="/images/tim/Milos Milincic.png" 
+            alt={t.milosName} 
+            class="rounded-2xl shadow-xl w-full aspect-square object-cover border border-slate-200"
+            width="256"
+            height="256"
+          />
         </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-6 hover-lift card-3d animate-on-scroll stagger-2">
-          <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center mb-4 pulse">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.value2Title}</h3>
-          <p class="text-slate-600 text-sm">{t.value2Desc}</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-6 hover-lift card-3d animate-on-scroll stagger-3">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center mb-4 pulse">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.value3Title}</h3>
-          <p class="text-slate-600 text-sm">{t.value3Desc}</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-6 hover-lift card-3d animate-on-scroll stagger-4">
-          <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center mb-4 pulse">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-3">{t.value4Title}</h3>
-          <p class="text-slate-600 text-sm">{t.value4Desc}</p>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-slate-900 mb-1">{t.milosName}</h3>
+          <p class="text-indigo-600 font-semibold mb-4">{t.milosRole}</p>
+          <p class="text-slate-700 leading-relaxed mb-4">{t.milosBio}</p>
+          <blockquote class="border-l-4 border-indigo-600 pl-4 italic text-slate-600">"{t.milosQuote}"</blockquote>
         </div>
       </div>
+      
+      <div class="flex flex-col md:flex-row gap-8 items-start animate-on-scroll">
+        <div class="flex-shrink-0 w-full md:w-64 order-2 md:order-1">
+          <img 
+            src="/images/tim/Mileta Milincic.png" 
+            alt={t.miletaName} 
+            class="rounded-2xl shadow-xl w-full aspect-square object-cover border border-slate-200"
+            width="256"
+            height="256"
+          />
+        </div>
+        <div class="flex-1 order-1 md:order-2">
+          <h3 class="text-2xl font-bold text-slate-900 mb-1">{t.miletaName}</h3>
+          <p class="text-indigo-600 font-semibold mb-4">{t.miletaRole}</p>
+          <p class="text-slate-700 leading-relaxed mb-4">{t.miletaBio}</p>
+          <blockquote class="border-l-4 border-indigo-600 pl-4 italic text-slate-600">"{t.miletaQuote}"</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 3. Način rada i vrijednosti -->
+  <section class="py-16 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-8 text-center animate-on-scroll">
+        {t.valuesTitle}
+      </h2>
+      <ul class="space-y-4 mb-8 animate-on-scroll">
+        <li class="flex items-start gap-3">
+          <span class="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center text-sm font-bold">✓</span>
+          <span class="text-lg text-slate-700">{t.valueBullet1}</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center text-sm font-bold">✓</span>
+          <span class="text-lg text-slate-700">{t.valueBullet2}</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center text-sm font-bold">✓</span>
+          <span class="text-lg text-slate-700">{t.valueBullet3}</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center text-sm font-bold">✓</span>
+          <span class="text-lg text-slate-700">{t.valueBullet4}</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center text-sm font-bold">✓</span>
+          <span class="text-lg text-slate-700">{t.valueBullet5}</span>
+        </li>
+      </ul>
+      <p class="text-lg text-slate-700 leading-relaxed bg-white/80 backdrop-blur-sm border border-slate-200 rounded-2xl p-6 shadow-lg animate-on-scroll">
+        {t.valuesIntro}
+      </p>
     </div>
   </section>
   
   <CTA
-    title={lang === 'sr' ? 'Hajde da radimo zajedno' : lang === 'de' ? 'Lassen Sie uns zusammenarbeiten' : "Let's work together"}
-    description={lang === 'sr' ? 'Pošaljite upit — odgovaramo za par sati i dobijate demo za 24–48h.' : lang === 'de' ? 'Senden Sie eine Anfrage — wir antworten in wenigen Stunden und Sie erhalten eine Demo in 24–48h.' : 'Send an enquiry — we reply within a few hours and you get a demo in 24–48h.'}
+    title={t.ctaTitle}
+    description={t.ctaDesc}
     href={`${base}/contact`}
-    buttonText={translations[lang].nav.requestQuote}
+    buttonText={t.ctaButton}
   />
   
   <Footer slot="footer" lang={lang} />
