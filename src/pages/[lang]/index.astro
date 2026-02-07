@@ -66,32 +66,36 @@ const base = `/${lang}`;
     </div>
   </section>
   
-  <section class="py-16 relative overflow-hidden bg-white rounded-3xl mx-4 sm:mx-6 lg:mx-8 shadow-xl border border-slate-200/80 -mt-4">
-    <div class="absolute top-20 left-0 w-72 h-72 bg-indigo-200/20 rounded-full blur-3xl -ml-36 -mt-36 float"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="text-center mb-12 animate-on-scroll">
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{home.servicesTitle}</h2>
-        <p class="text-xl text-slate-600">{home.servicesSubtitle}</p>
-      </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="animate-on-scroll stagger-1 hover-lift">
-          <Card title={home.cardLanding} description={home.cardLandingDesc} icon="M13 10V3L4 14h7v7l9-11h-7z" href={`${base}/services`} />
+  <section class="py-16 relative overflow-hidden bg-slate-100 -mt-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative overflow-hidden bg-white rounded-3xl shadow-xl border border-slate-200/80">
+        <div class="absolute top-20 left-0 w-72 h-72 bg-indigo-200/20 rounded-full blur-3xl -ml-36 -mt-36 float"></div>
+        <div class="relative z-10 px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <div class="text-center mb-12 animate-on-scroll">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{home.servicesTitle}</h2>
+            <p class="text-xl text-slate-600">{home.servicesSubtitle}</p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="animate-on-scroll stagger-1 hover-lift">
+              <Card title={home.cardLanding} description={home.cardLandingDesc} icon="M13 10V3L4 14h7v7l9-11h-7z" href={`${base}/services`} />
+            </div>
+            <div class="animate-on-scroll stagger-2 hover-lift">
+              <Card title={home.cardBusiness} description={home.cardBusinessDesc} icon="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" href={`${base}/services`} />
+            </div>
+            <div class="animate-on-scroll stagger-3 hover-lift">
+              <Card title={home.cardWebapp} description={home.cardWebappDesc} icon="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" href={`${base}/services`} />
+            </div>
+            <div class="animate-on-scroll stagger-4 hover-lift">
+              <Card title={home.cardHosting} description={home.cardHostingDesc} icon="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" href={`${base}/services`} />
+            </div>
+          </div>
+          <div class="text-center mt-10 animate-on-scroll">
+            <a href={`${base}/services`} class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold group">
+              {home.allServices}
+              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+            </a>
+          </div>
         </div>
-        <div class="animate-on-scroll stagger-2 hover-lift">
-          <Card title={home.cardBusiness} description={home.cardBusinessDesc} icon="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" href={`${base}/services`} />
-        </div>
-        <div class="animate-on-scroll stagger-3 hover-lift">
-          <Card title={home.cardWebapp} description={home.cardWebappDesc} icon="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" href={`${base}/services`} />
-        </div>
-        <div class="animate-on-scroll stagger-4 hover-lift">
-          <Card title={home.cardHosting} description={home.cardHostingDesc} icon="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" href={`${base}/services`} />
-        </div>
-      </div>
-      <div class="text-center mt-10 animate-on-scroll">
-        <a href={`${base}/services`} class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold group">
-          {home.allServices}
-          <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
-        </a>
       </div>
     </div>
   </section>
@@ -125,6 +129,12 @@ const base = `/${lang}`;
           <p class="text-slate-300 text-sm">{home.step4Desc}</p>
         </div>
       </div>
+    </div>
+  </section>
+  
+  <section class="py-12 bg-neutral-100" aria-hidden="true">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-slate-600 text-lg sm:text-xl font-medium">{home.breakerTagline}</p>
     </div>
   </section>
   
@@ -169,34 +179,36 @@ const base = `/${lang}`;
     </div>
   </section>
   
-  <section class="py-16 bg-white rounded-3xl mx-4 sm:mx-6 lg:mx-8 shadow-xl border border-slate-200/80 relative overflow-hidden">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="text-center mb-12 animate-on-scroll">
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{home.pricingTitle}</h2>
-        <p class="text-xl text-slate-600">{home.pricingSubtitle}</p>
+  <section class="py-16 bg-slate-100 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl shadow-xl border border-slate-200/80 p-6 sm:p-8 lg:p-10 relative z-10">
+        <div class="text-center mb-12 animate-on-scroll">
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">{home.pricingTitle}</h2>
+          <p class="text-xl text-slate-600">{home.pricingSubtitle}</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-lg hover-lift animate-on-scroll stagger-1">
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">START</h3>
+            <p class="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">{pricing.priceStart}</p>
+            <p class="text-slate-600 mb-6 text-sm">{pricing.startDesc}</p>
+            <a href={`${base}/pricing`} class="block text-center text-indigo-600 hover:text-indigo-700 font-semibold group">{home.detailMore} →</a>
+          </div>
+          <div class="bg-gradient-to-br from-indigo-600 to-purple-600 text-white border-2 border-indigo-600 rounded-xl p-6 shadow-2xl relative hover-lift animate-on-scroll stagger-2 scale-105">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-emerald-500 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-xl pulse">{pricing.popular}</div>
+            <h3 class="text-xl font-semibold mb-2">PRO</h3>
+            <p class="text-3xl font-bold mb-4">{pricing.pricePro}</p>
+            <p class="text-indigo-100 mb-6 text-sm">{pricing.proDesc}</p>
+            <a href={`${base}/pricing`} class="block text-center text-white hover:text-indigo-100 font-semibold">{home.detailMore} →</a>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-lg hover-lift animate-on-scroll stagger-3">
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">CUSTOM</h3>
+            <p class="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">{pricing.priceCustom}</p>
+            <p class="text-slate-600 mb-6 text-sm">{pricing.customDesc}</p>
+            <a href={`${base}/pricing`} class="block text-center text-indigo-600 hover:text-indigo-700 font-semibold group">{home.detailMore} →</a>
+          </div>
+        </div>
+        <p class="text-center text-slate-600 mt-8 text-sm animate-on-scroll">{home.hostingNote}</p>
       </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white/95 backdrop-blur-sm border border-slate-200 rounded-xl p-6 shadow-xl hover-lift animate-on-scroll stagger-1">
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">START</h3>
-          <p class="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">{pricing.priceStart}</p>
-          <p class="text-slate-600 mb-6 text-sm">{pricing.startDesc}</p>
-          <a href={`${base}/pricing`} class="block text-center text-indigo-600 hover:text-indigo-700 font-semibold group">{home.detailMore} →</a>
-        </div>
-        <div class="bg-gradient-to-br from-indigo-600 to-purple-600 text-white border-2 border-indigo-600 rounded-xl p-6 shadow-2xl relative hover-lift animate-on-scroll stagger-2 scale-105">
-          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-emerald-500 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-xl pulse">{pricing.popular}</div>
-          <h3 class="text-xl font-semibold mb-2">PRO</h3>
-          <p class="text-3xl font-bold mb-4">{pricing.pricePro}</p>
-          <p class="text-indigo-100 mb-6 text-sm">{pricing.proDesc}</p>
-          <a href={`${base}/pricing`} class="block text-center text-white hover:text-indigo-100 font-semibold">{home.detailMore} →</a>
-        </div>
-        <div class="bg-white/95 backdrop-blur-sm border border-slate-200 rounded-xl p-6 shadow-xl hover-lift animate-on-scroll stagger-3">
-          <h3 class="text-xl font-semibold text-slate-900 mb-2">CUSTOM</h3>
-          <p class="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">{pricing.priceCustom}</p>
-          <p class="text-slate-600 mb-6 text-sm">{pricing.customDesc}</p>
-          <a href={`${base}/pricing`} class="block text-center text-indigo-600 hover:text-indigo-700 font-semibold group">{home.detailMore} →</a>
-        </div>
-      </div>
-      <p class="text-center text-slate-600 mt-8 text-sm animate-on-scroll">{home.hostingNote}</p>
     </div>
   </section>
   

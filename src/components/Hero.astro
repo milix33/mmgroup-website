@@ -25,9 +25,16 @@ const { title, subtitle, primaryCta, secondaryCta, gradient = true } = Astro.pro
     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight fade-in-up">
       {title}
     </h1>
-    <p class="text-xl text-gray-600 mb-10 max-w-3xl mx-auto fade-in stagger-1">
+    <p class="text-xl text-gray-600 mb-6 max-w-3xl mx-auto fade-in stagger-1">
       {subtitle}
     </p>
+    <div class="flex justify-center mb-10 fade-in stagger-1">
+      <img 
+        src="/logo.png" 
+        alt="MMGroup" 
+        class="h-24 sm:h-28 lg:h-32 w-auto object-contain logo-float-rotate"
+      />
+    </div>
     <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in stagger-2">
       {primaryCta && (
         <a 
