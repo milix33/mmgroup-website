@@ -2,7 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
-import SectionHeader from '../../components/SectionHeader.astro';
 import { CONTACT, getWhatsAppLink, getViberLink, getEmailLink, getFormAction } from '../../config';
 import { translations } from '../../i18n/translations';
 
@@ -28,8 +27,9 @@ const base = `/${lang}`;
   
   <section class="relative py-16 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 gradient-animate overflow-hidden">
     <div class="absolute inset-0 pattern-dots opacity-20"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <SectionHeader title={t.title} subtitle={t.subtitle} as="h1" light />
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4 fade-in-up">{t.title}</h1>
+      <p class="text-xl text-white/90 fade-in stagger-1">{t.subtitle}</p>
     </div>
   </section>
   
@@ -115,7 +115,7 @@ const base = `/${lang}`;
   
   <section class="py-12 bg-gradient-to-br from-slate-50 to-indigo-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <SectionHeader title={t.faqTitle} class="mb-8 animate-on-scroll" />
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center animate-on-scroll">{t.faqTitle}</h2>
       <div class="space-y-4">
         <div class="bg-white border border-slate-200 rounded-xl p-5 hover-lift animate-on-scroll stagger-1">
           <h3 class="text-lg font-semibold text-slate-900 mb-2">{t.faq1q}</h3>
